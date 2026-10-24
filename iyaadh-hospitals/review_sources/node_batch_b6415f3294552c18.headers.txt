@@ -1,0 +1,16 @@
+HTTP/2 404 
+server: Apache
+cache-control: no-cache
+strict-transport-security: max-age=31536000; includeSubDomains; preload
+content-type: text/html; charset=utf-8
+accept-ranges: bytes
+date: Sat, 24 Oct 2026 06:20:23 GMT
+via: 1.1 varnish
+x-served-by: cache-sin-wsap440049-SIN
+x-cache: MISS
+x-cache-hits: 0
+x-timer: S1792822824.501780,VS0,VE180
+vary: Accept-Encoding
+alt-svc: h3=":443";ma=86400,h3-29=":443";ma=86400,h3-27=":443";ma=86400
+content-length: 0
+

@@ -1,0 +1,1939 @@
+{
+  "blank_counts": {
+    "atoll_code": 0,
+    "change_note": 0,
+    "coordinate_quality": 0,
+    "island": 0,
+    "latitude": 0,
+    "licence": 0,
+    "longitude": 0,
+    "notes": 0,
+    "opening_hours_if_listed": 0,
+    "operator": 0,
+    "original_value": 0,
+    "retrieval_date": 0,
+    "services_listed": 0,
+    "source_name": 0,
+    "source_url": 0,
+    "terminal_name": 0,
+    "terminal_name_dhivehi_if_known": 0,
+    "terminal_type": 0,
+    "verification_status": 0,
+    "verified_url": 0,
+    "what_was_checked": 0
+  },
+  "column_count": 21,
+  "columns": [
+    "terminal_name",
+    "terminal_name_dhivehi_if_known",
+    "terminal_type",
+    "island",
+    "atoll_code",
+    "latitude",
+    "longitude",
+    "coordinate_quality",
+    "operator",
+    "services_listed",
+    "opening_hours_if_listed",
+    "source_url",
+    "source_name",
+    "retrieval_date",
+    "licence",
+    "notes",
+    "verification_status",
+    "verified_url",
+    "what_was_checked",
+    "original_value",
+    "change_note"
+  ],
+  "coordinate_collision_groups": [],
+  "coordinate_note": "Coordinate collisions can be intentional island proxies and are not automatically duplicate facilities.",
+  "counts": {
+    "atoll_code": {
+      "AA": 8,
+      "ADh": 10,
+      "K": 10,
+      "Male City": 13,
+      "V": 5
+    },
+    "coordinate_quality": {
+      "source-provided": 46
+    },
+    "licence": {
+      "ODbL 1.0": 46
+    },
+    "verification_status": {
+      "CORRECTED": 35,
+      "INVALID": 1,
+      "VERIFIED": 10
+    }
+  },
+  "dataset_status": "review_copy_with_unresolved_source_issues",
+  "duplicate_normalized_name_island_groups": [],
+  "exact_duplicate_row_groups": [],
+  "method": {
+    "csv_row_number": "Header is row 1; first data record is row 2",
+    "geography_input": {
+      "attribution": "OneMap Geomatics Department, Ministry of Infrastructure, Housing and Urban Development; https://readme.onemap.mv/pdf/Data%20Usage%20License.pdf",
+      "note": "Existing public reference read only; no FollowMe GPS or pipeline outputs included. Polygons downloaded 2026-10-24; not a confirmed August 2025 shoreline.",
+      "original_path": "datathon-2026/data/reference/followme/onemap_study_islands.geojson",
+      "sha256": "028d86db440078616cc207a3a05aa6a17828afafba9540cd0ca2fd22c25e8031"
+    },
+    "limitations": [
+      "Current feature checks do not establish August 2025 availability.",
+      "Generic government URLs were inspected in a browser but individual clinic entries, services, ownership and opening hours were not independently confirmed.",
+      "CSV VERIFIED/CORRECTED labels are original supplier assertions, not this review outcome."
+    ],
+    "name_normalization": "ASCII diacritic folding and punctuation removal; explicit input-name aliases Villimale→Vilingili and Himmafushi→Hinmafushi; no nearest-island assignment",
+    "polygon_distance_note": "Diagnostic threshold only, not a legal territorial boundary.",
+    "polygon_distance_threshold_m": 1000,
+    "source_checks": "Current public OSM API, exact cited node/way IDs; cached response bytes and HTTP receipts in review_sources/",
+    "source_geometry_distance": "WGS84 great-circle minimum to returned OSM node/way vertices, not a full polygon distance. A 1000 m diagnostic threshold identifies obvious source mismatches and is not an accuracy guarantee.",
+    "supplied_file_unchanged": true
+  },
+  "original_file": "maritime_terminals_audited.csv",
+  "original_sha256": "194a4c662ab306170a898ba74eeb6249ab2686e143c06761fd19fdc10d2f6831",
+  "review_date": "2026-10-24",
+  "row_count": 46,
+  "rows": [
+    {
+      "atoll_code": "Male City",
+      "csv_row": 2,
+      "island": "Male",
+      "island_geometry_check": {
+        "distance_from_island_footprint_m": 0.0,
+        "method": "OneMap footprint distance in EPSG:32643; zero means covered by polygon",
+        "onemap_fcode": "LD0442",
+        "onemap_island": "Malé"
+      },
+      "issues": [],
+      "name": "Hulhumale' Ferry Terminal (Male')",
+      "source_check": {
+        "expected_feature_type_supported_by_returned_tags": false,
+        "geometry_complete": true,
+        "issues": [
+          "source_geometry_more_than_1000m_from_csv_point",
+          "returned_tags_do_not_support_claimed_feature_type"
+        ],
+        "minimum_distance_to_osm_geometry_vertex_m": 4363554.0,
+        "osm_id": 233767098,
+        "osm_type": "way",
+        "returned_geometry_bounds": [
+          76.8570085,
+          43.3078494,
+          76.860035,
+          43.3095685
+        ],
+        "returned_last_edit_utc": "2023-08-11T06:21:01Z",
+        "returned_tags": {
+          "highway": "residential"
+        },
+        "returned_version": 5,
+        "scope": "Limited current OSM feature/type/geometry comparison; does not verify services, opening hours, ownership, licence or August 2025 operation",
+        "source_url": "https://www.openstreetmap.org/way/233767098",
+        "status": "source_mismatch"
+      },
+      "supplied_verification_status": "VERIFIED"
+    },
+    {
+      "atoll_code": "Male City",
+      "csv_row": 3,
+      "island": "Male",
+      "island_geometry_check": {
+        "distance_from_island_footprint_m": 0.0,
+        "method": "OneMap footprint distance in EPSG:32643; zero means covered by polygon",
+        "onemap_fcode": "LD0442",
+        "onemap_island": "Malé"
+      },
+      "issues": [],
+      "name": "Villimale' Ferry Terminal (Male')",
+      "source_check": {
+        "expected_feature_type_supported_by_returned_tags": false,
+        "geometry_complete": true,
+        "issues": [
+          "source_geometry_more_than_1000m_from_csv_point",
+          "returned_tags_do_not_support_claimed_feature_type"
+        ],
+        "minimum_distance_to_osm_geometry_vertex_m": 4363525.2,
+        "osm_id": 233767099,
+        "osm_type": "way",
+        "returned_geometry_bounds": [
+          76.8562631,
+          43.3019313,
+          76.8577704,
+          43.3020968
+        ],
+        "returned_last_edit_utc": "2013-08-16T18:33:56Z",
+        "returned_tags": {
+          "highway": "residential"
+        },
+        "returned_version": 1,
+        "scope": "Limited current OSM feature/type/geometry comparison; does not verify services, opening hours, ownership, licence or August 2025 operation",
+        "source_url": "https://www.openstreetmap.org/way/233767099",
+        "status": "source_mismatch"
+      },
+      "supplied_verification_status": "VERIFIED"
+    },
+    {
+      "atoll_code": "Male City",
+      "csv_row": 4,
+      "island": "Male",
+      "island_geometry_check": {
+        "distance_from_island_footprint_m": 29.2,
+        "method": "OneMap footprint distance in EPSG:32643; zero means covered by polygon",
+        "onemap_fcode": "LD0442",
+        "onemap_island": "Malé"
+      },
+      "issues": [],
+      "name": "Izzudheen Jetty (Jetty 1)",
+      "source_check": {
+        "issues": [
+          "current_object_is_marked_not_visible"
+        ],
+        "osm_id": 3688177420,
+        "osm_type": "node",
+        "returned_last_edit_utc": "2021-03-19T12:40:36Z",
+        "returned_tags": {},
+        "returned_version": 3,
+        "source_url": "https://www.openstreetmap.org/node/3688177420",
+        "status": "feature_deleted"
+      },
+      "supplied_verification_status": "CORRECTED"
+    },
+    {
+      "atoll_code": "Male City",
+      "csv_row": 5,
+      "island": "Male",
+      "island_geometry_check": {
+        "distance_from_island_footprint_m": 73.5,
+        "method": "OneMap footprint distance in EPSG:32643; zero means covered by polygon",
+        "onemap_fcode": "LD0442",
+        "onemap_island": "Malé"
+      },
+      "issues": [],
+      "name": "Jetty 2",
+      "source_check": {
+        "expected_feature_type_supported_by_returned_tags": false,
+        "geometry_complete": true,
+        "issues": [
+          "source_geometry_more_than_1000m_from_csv_point",
+          "returned_tags_do_not_support_claimed_feature_type"
+        ],
+        "minimum_distance_to_osm_geometry_vertex_m": 7138257.7,
+        "osm_id": 3688177421,
+        "osm_type": "node",
+        "returned_geometry_bounds": [
+          20.9911503,
+          51.4325733,
+          20.9911503,
+          51.4325733
+        ],
+        "returned_last_edit_utc": "2021-03-19T13:25:13Z",
+        "returned_tags": {},
+        "returned_version": 2,
+        "scope": "Limited current OSM feature/type/geometry comparison; does not verify services, opening hours, ownership, licence or August 2025 operation",
+        "source_url": "https://www.openstreetmap.org/node/3688177421",
+        "status": "source_mismatch"
+      },
+      "supplied_verification_status": "CORRECTED"
+    },
+    {
+      "atoll_code": "Male City",
+      "csv_row": 6,
+      "island": "Male",
+      "island_geometry_check": {
+        "distance_from_island_footprint_m": 65.3,
+        "method": "OneMap footprint distance in EPSG:32643; zero means covered by polygon",
+        "onemap_fcode": "LD0442",
+        "onemap_island": "Malé"
+      },
+      "issues": [],
+      "name": "Jetty 3",
+      "source_check": {
+        "expected_feature_type_supported_by_returned_tags": false,
+        "geometry_complete": true,
+        "issues": [
+          "source_geometry_more_than_1000m_from_csv_point",
+          "returned_tags_do_not_support_claimed_feature_type"
+        ],
+        "minimum_distance_to_osm_geometry_vertex_m": 7138349.8,
+        "osm_id": 3688177422,
+        "osm_type": "node",
+        "returned_geometry_bounds": [
+          20.9891932,
+          51.4312007,
+          20.9891932,
+          51.4312007
+        ],
+        "returned_last_edit_utc": "2021-03-19T12:40:36Z",
+        "returned_tags": {},
+        "returned_version": 2,
+        "scope": "Limited current OSM feature/type/geometry comparison; does not verify services, opening hours, ownership, licence or August 2025 operation",
+        "source_url": "https://www.openstreetmap.org/node/3688177422",
+        "status": "source_mismatch"
+      },
+      "supplied_verification_status": "VERIFIED"
+    },
+    {
+      "atoll_code": "Male City",
+      "csv_row": 7,
+      "island": "Male",
+      "island_geometry_check": {
+        "distance_from_island_footprint_m": 64.1,
+        "method": "OneMap footprint distance in EPSG:32643; zero means covered by polygon",
+        "onemap_fcode": "LD0442",
+        "onemap_island": "Malé"
+      },
+      "issues": [],
+      "name": "Jetty 4",
+      "source_check": {
+        "expected_feature_type_supported_by_returned_tags": false,
+        "geometry_complete": true,
+        "issues": [
+          "source_geometry_more_than_1000m_from_csv_point",
+          "returned_tags_do_not_support_claimed_feature_type"
+        ],
+        "minimum_distance_to_osm_geometry_vertex_m": 7138450.4,
+        "osm_id": 3688177423,
+        "osm_type": "node",
+        "returned_geometry_bounds": [
+          20.991909,
+          51.4349523,
+          20.991909,
+          51.4349523
+        ],
+        "returned_last_edit_utc": "2021-03-19T13:25:13Z",
+        "returned_tags": {},
+        "returned_version": 2,
+        "scope": "Limited current OSM feature/type/geometry comparison; does not verify services, opening hours, ownership, licence or August 2025 operation",
+        "source_url": "https://www.openstreetmap.org/node/3688177423",
+        "status": "source_mismatch"
+      },
+      "supplied_verification_status": "VERIFIED"
+    },
+    {
+      "atoll_code": "Male City",
+      "csv_row": 8,
+      "island": "Male",
+      "island_geometry_check": {
+        "distance_from_island_footprint_m": 61.2,
+        "method": "OneMap footprint distance in EPSG:32643; zero means covered by polygon",
+        "onemap_fcode": "LD0442",
+        "onemap_island": "Malé"
+      },
+      "issues": [],
+      "name": "Jetty 5",
+      "source_check": {
+        "issues": [
+          "current_object_is_marked_not_visible"
+        ],
+        "osm_id": 3688177424,
+        "osm_type": "node",
+        "returned_last_edit_utc": "2021-03-19T12:40:36Z",
+        "returned_tags": {},
+        "returned_version": 2,
+        "source_url": "https://www.openstreetmap.org/node/3688177424",
+        "status": "feature_deleted"
+      },
+      "supplied_verification_status": "CORRECTED"
+    },
+    {
+      "atoll_code": "Male City",
+      "csv_row": 9,
+      "island": "Male",
+      "island_geometry_check": {
+        "distance_from_island_footprint_m": 54.3,
+        "method": "OneMap footprint distance in EPSG:32643; zero means covered by polygon",
+        "onemap_fcode": "LD0442",
+        "onemap_island": "Malé"
+      },
+      "issues": [],
+      "name": "Jetty 6",
+      "source_check": {
+        "expected_feature_type_supported_by_returned_tags": false,
+        "geometry_complete": true,
+        "issues": [
+          "source_geometry_more_than_1000m_from_csv_point",
+          "returned_tags_do_not_support_claimed_feature_type"
+        ],
+        "minimum_distance_to_osm_geometry_vertex_m": 7287925.8,
+        "osm_id": 3688177425,
+        "osm_type": "node",
+        "returned_geometry_bounds": [
+          16.296458,
+          48.230619,
+          16.296458,
+          48.230619
+        ],
+        "returned_last_edit_utc": "2022-02-19T18:56:01Z",
+        "returned_tags": {
+          "amenity": "recycling",
+          "check_date:recycling": "2022-01-13",
+          "operator": "Humana",
+          "recycling:clothes": "yes",
+          "recycling_type": "container",
+          "source": "2015-08-10 observed"
+        },
+        "returned_version": 4,
+        "scope": "Limited current OSM feature/type/geometry comparison; does not verify services, opening hours, ownership, licence or August 2025 operation",
+        "source_url": "https://www.openstreetmap.org/node/3688177425",
+        "status": "source_mismatch"
+      },
+      "supplied_verification_status": "VERIFIED"
+    },
+    {
+      "atoll_code": "Male City",
+      "csv_row": 10,
+      "island": "Male",
+      "island_geometry_check": {
+        "distance_from_island_footprint_m": 0.0,
+        "method": "OneMap footprint distance in EPSG:32643; zero means covered by polygon",
+        "onemap_fcode": "LD0442",
+        "onemap_island": "Malé"
+      },
+      "issues": [],
+      "name": "Male' North Harbour",
+      "source_check": {
+        "expected_feature_type_supported_by_returned_tags": true,
+        "geometry_complete": true,
+        "issues": [
+          "returned_feature_name_differs_from_claimed_name"
+        ],
+        "minimum_distance_to_osm_geometry_vertex_m": 819.1,
+        "osm_id": 302137560,
+        "osm_type": "way",
+        "returned_geometry_bounds": [
+          73.5169886,
+          4.1776551,
+          73.5174042,
+          4.1780452
+        ],
+        "returned_last_edit_utc": "2026-06-07T10:28:56Z",
+        "returned_tags": {
+          "amenity": "ferry_terminal",
+          "building": "yes",
+          "ferry": "yes",
+          "name": "Hulu Male' Ferry Terminal",
+          "network": "RTL",
+          "network:wikidata": "Q138509118",
+          "opening_hours": "Mo-Su 05:30-00:00",
+          "operator": "MTCC",
+          "operator:wikidata": "Q138509111",
+          "public_transport": "station",
+          "wheelchair": "yes"
+        },
+        "returned_version": 7,
+        "scope": "Limited current OSM feature/type/geometry comparison; does not verify services, opening hours, ownership, licence or August 2025 operation",
+        "source_url": "https://www.openstreetmap.org/way/302137560",
+        "status": "source_mismatch"
+      },
+      "supplied_verification_status": "CORRECTED"
+    },
+    {
+      "atoll_code": "Male City",
+      "csv_row": 11,
+      "island": "Male",
+      "island_geometry_check": {
+        "distance_from_island_footprint_m": 28.1,
+        "method": "OneMap footprint distance in EPSG:32643; zero means covered by polygon",
+        "onemap_fcode": "LD0442",
+        "onemap_island": "Malé"
+      },
+      "issues": [],
+      "name": "Male' T-Jetty",
+      "source_check": {
+        "expected_feature_type_supported_by_returned_tags": false,
+        "geometry_complete": true,
+        "issues": [
+          "source_geometry_more_than_1000m_from_csv_point",
+          "returned_tags_do_not_support_claimed_feature_type"
+        ],
+        "minimum_distance_to_osm_geometry_vertex_m": 8227045.4,
+        "osm_id": 456182991,
+        "osm_type": "way",
+        "returned_geometry_bounds": [
+          3.9910954,
+          51.0961839,
+          3.9913136,
+          51.0962745
+        ],
+        "returned_last_edit_utc": "2022-10-15T15:08:43Z",
+        "returned_tags": {
+          "addr:housenumber": "97",
+          "addr:street": "Hovenierstraat",
+          "building": "house",
+          "source:geometry": "GRB",
+          "source:geometry:date": "2016-10-17",
+          "source:geometry:ref": "Gbg/5725389"
+        },
+        "returned_version": 3,
+        "scope": "Limited current OSM feature/type/geometry comparison; does not verify services, opening hours, ownership, licence or August 2025 operation",
+        "source_url": "https://www.openstreetmap.org/way/456182991",
+        "status": "source_mismatch"
+      },
+      "supplied_verification_status": "VERIFIED"
+    },
+    {
+      "atoll_code": "Male City",
+      "csv_row": 12,
+      "island": "Hulhumale",
+      "island_geometry_check": {
+        "distance_from_island_footprint_m": 37.4,
+        "method": "OneMap footprint distance in EPSG:32643; zero means covered by polygon",
+        "onemap_fcode": "LD0591",
+        "onemap_island": "Hulhumalé"
+      },
+      "issues": [],
+      "name": "Hulhumale' Ferry Terminal",
+      "source_check": {
+        "expected_feature_type_supported_by_returned_tags": false,
+        "geometry_complete": true,
+        "issues": [
+          "source_geometry_more_than_1000m_from_csv_point",
+          "returned_tags_do_not_support_claimed_feature_type"
+        ],
+        "minimum_distance_to_osm_geometry_vertex_m": 4358342.9,
+        "osm_id": 233767101,
+        "osm_type": "way",
+        "returned_geometry_bounds": [
+          76.8584661,
+          43.2990468,
+          76.8594887,
+          43.2994958
+        ],
+        "returned_last_edit_utc": "2013-08-16T18:33:56Z",
+        "returned_tags": {
+          "highway": "residential"
+        },
+        "returned_version": 1,
+        "scope": "Limited current OSM feature/type/geometry comparison; does not verify services, opening hours, ownership, licence or August 2025 operation",
+        "source_url": "https://www.openstreetmap.org/way/233767101",
+        "status": "source_mismatch"
+      },
+      "supplied_verification_status": "VERIFIED"
+    },
+    {
+      "atoll_code": "Male City",
+      "csv_row": 13,
+      "island": "Villimale",
+      "island_geometry_check": {
+        "distance_from_island_footprint_m": 46.9,
+        "method": "OneMap footprint distance in EPSG:32643; zero means covered by polygon",
+        "onemap_fcode": "LD0268",
+        "onemap_island": "Vilin'gili"
+      },
+      "issues": [],
+      "name": "Villimale' Ferry Terminal",
+      "source_check": {
+        "expected_feature_type_supported_by_returned_tags": false,
+        "geometry_complete": true,
+        "issues": [
+          "source_geometry_more_than_1000m_from_csv_point",
+          "returned_tags_do_not_support_claimed_feature_type"
+        ],
+        "minimum_distance_to_osm_geometry_vertex_m": 4362850.1,
+        "osm_id": 233767100,
+        "osm_type": "way",
+        "returned_geometry_bounds": [
+          76.8571721,
+          43.2974343,
+          76.859133,
+          43.3005321
+        ],
+        "returned_last_edit_utc": "2013-08-16T18:33:56Z",
+        "returned_tags": {
+          "highway": "residential"
+        },
+        "returned_version": 1,
+        "scope": "Limited current OSM feature/type/geometry comparison; does not verify services, opening hours, ownership, licence or August 2025 operation",
+        "source_url": "https://www.openstreetmap.org/way/233767100",
+        "status": "source_mismatch"
+      },
+      "supplied_verification_status": "VERIFIED"
+    },
+    {
+      "atoll_code": "Male City",
+      "csv_row": 14,
+      "island": "Hulhule",
+      "island_geometry_check": {
+        "candidate_count": 0,
+        "method": "OneMap footprint distance in EPSG:32643; zero means covered by polygon",
+        "name_matches_in_other_atolls": [
+          {
+            "FCODE": "LD0890",
+            "atoll": "Kaafu",
+            "islandName": "Hulhule"
+          }
+        ],
+        "status": "no_unique_same_atoll_name_match"
+      },
+      "issues": [
+        "island_and_atoll_need_explicit_reconciliation"
+      ],
+      "name": "Velana Airport Ferry Jetty",
+      "source_check": {
+        "expected_feature_type_supported_by_returned_tags": false,
+        "geometry_complete": true,
+        "issues": [
+          "source_geometry_more_than_1000m_from_csv_point",
+          "returned_tags_do_not_support_claimed_feature_type"
+        ],
+        "minimum_distance_to_osm_geometry_vertex_m": 15050051.1,
+        "osm_id": 1458923412,
+        "osm_type": "node",
+        "returned_geometry_bounds": [
+          -61.9204769,
+          -11.1635108,
+          -61.9204769,
+          -11.1635108
+        ],
+        "returned_last_edit_utc": "2019-11-01T07:55:05Z",
+        "returned_tags": {},
+        "returned_version": 2,
+        "scope": "Limited current OSM feature/type/geometry comparison; does not verify services, opening hours, ownership, licence or August 2025 operation",
+        "source_url": "https://www.openstreetmap.org/node/1458923412",
+        "status": "source_mismatch"
+      },
+      "supplied_verification_status": "VERIFIED"
+    },
+    {
+      "atoll_code": "AA",
+      "csv_row": 15,
+      "island": "Rasdhoo",
+      "island_geometry_check": {
+        "distance_from_island_footprint_m": 0.0,
+        "method": "OneMap footprint distance in EPSG:32643; zero means covered by polygon",
+        "onemap_fcode": "LD0257",
+        "onemap_island": "Rasdhoo"
+      },
+      "issues": [],
+      "name": "Rasdhoo Harbour",
+      "source_check": {
+        "expected_feature_type_supported_by_returned_tags": false,
+        "geometry_complete": true,
+        "issues": [
+          "source_geometry_more_than_1000m_from_csv_point",
+          "returned_tags_do_not_support_claimed_feature_type"
+        ],
+        "minimum_distance_to_osm_geometry_vertex_m": 4451293.7,
+        "osm_id": 456182900,
+        "osm_type": "way",
+        "returned_geometry_bounds": [
+          33.4063708,
+          -1.8892084,
+          33.4074519,
+          -1.8872729
+        ],
+        "returned_last_edit_utc": "2017-03-09T12:16:12Z",
+        "returned_tags": {
+          "highway": "path"
+        },
+        "returned_version": 2,
+        "scope": "Limited current OSM feature/type/geometry comparison; does not verify services, opening hours, ownership, licence or August 2025 operation",
+        "source_url": "https://www.openstreetmap.org/way/456182900",
+        "status": "source_mismatch"
+      },
+      "supplied_verification_status": "CORRECTED"
+    },
+    {
+      "atoll_code": "AA",
+      "csv_row": 16,
+      "island": "Bodufolhudhoo",
+      "island_geometry_check": {
+        "distance_from_island_footprint_m": 4.2,
+        "method": "OneMap footprint distance in EPSG:32643; zero means covered by polygon",
+        "onemap_fcode": "LD0474",
+        "onemap_island": "Bodufolhudhoo"
+      },
+      "issues": [],
+      "name": "Bodufolhudhoo Harbour",
+      "source_check": {
+        "expected_feature_type_supported_by_returned_tags": false,
+        "geometry_complete": true,
+        "issues": [
+          "source_geometry_more_than_1000m_from_csv_point",
+          "returned_tags_do_not_support_claimed_feature_type"
+        ],
+        "minimum_distance_to_osm_geometry_vertex_m": 4426095.4,
+        "osm_id": 456182901,
+        "osm_type": "way",
+        "returned_geometry_bounds": [
+          33.404273,
+          -1.8893235,
+          33.4063708,
+          -1.8875139
+        ],
+        "returned_last_edit_utc": "2016-11-27T12:39:18Z",
+        "returned_tags": {
+          "highway": "path"
+        },
+        "returned_version": 1,
+        "scope": "Limited current OSM feature/type/geometry comparison; does not verify services, opening hours, ownership, licence or August 2025 operation",
+        "source_url": "https://www.openstreetmap.org/way/456182901",
+        "status": "source_mismatch"
+      },
+      "supplied_verification_status": "CORRECTED"
+    },
+    {
+      "atoll_code": "AA",
+      "csv_row": 17,
+      "island": "Feridhoo",
+      "island_geometry_check": {
+        "distance_from_island_footprint_m": 31.9,
+        "method": "OneMap footprint distance in EPSG:32643; zero means covered by polygon",
+        "onemap_fcode": "LD0287",
+        "onemap_island": "Feridhoo"
+      },
+      "issues": [],
+      "name": "Feridhoo Harbour",
+      "source_check": {
+        "expected_feature_type_supported_by_returned_tags": false,
+        "geometry_complete": true,
+        "issues": [
+          "source_geometry_more_than_1000m_from_csv_point",
+          "returned_tags_do_not_support_claimed_feature_type"
+        ],
+        "minimum_distance_to_osm_geometry_vertex_m": 4419318.8,
+        "osm_id": 456182902,
+        "osm_type": "way",
+        "returned_geometry_bounds": [
+          33.4032023,
+          -1.8886142,
+          33.404968,
+          -1.8862626
+        ],
+        "returned_last_edit_utc": "2016-11-27T12:39:18Z",
+        "returned_tags": {
+          "highway": "path"
+        },
+        "returned_version": 1,
+        "scope": "Limited current OSM feature/type/geometry comparison; does not verify services, opening hours, ownership, licence or August 2025 operation",
+        "source_url": "https://www.openstreetmap.org/way/456182902",
+        "status": "source_mismatch"
+      },
+      "supplied_verification_status": "VERIFIED"
+    },
+    {
+      "atoll_code": "AA",
+      "csv_row": 18,
+      "island": "Himandhoo",
+      "island_geometry_check": {
+        "distance_from_island_footprint_m": 0.0,
+        "method": "OneMap footprint distance in EPSG:32643; zero means covered by polygon",
+        "onemap_fcode": "LD0874",
+        "onemap_island": "Himandhoo"
+      },
+      "issues": [],
+      "name": "Himandhoo Harbour",
+      "source_check": {
+        "expected_feature_type_supported_by_returned_tags": false,
+        "geometry_complete": true,
+        "issues": [
+          "source_geometry_more_than_1000m_from_csv_point",
+          "returned_tags_do_not_support_claimed_feature_type"
+        ],
+        "minimum_distance_to_osm_geometry_vertex_m": 4419143.9,
+        "osm_id": 456182903,
+        "osm_type": "way",
+        "returned_geometry_bounds": [
+          33.4048285,
+          -1.8900395,
+          33.4050536,
+          -1.8890071
+        ],
+        "returned_last_edit_utc": "2016-11-27T12:39:18Z",
+        "returned_tags": {
+          "highway": "path"
+        },
+        "returned_version": 1,
+        "scope": "Limited current OSM feature/type/geometry comparison; does not verify services, opening hours, ownership, licence or August 2025 operation",
+        "source_url": "https://www.openstreetmap.org/way/456182903",
+        "status": "source_mismatch"
+      },
+      "supplied_verification_status": "CORRECTED"
+    },
+    {
+      "atoll_code": "AA",
+      "csv_row": 19,
+      "island": "Maalhos",
+      "island_geometry_check": {
+        "distance_from_island_footprint_m": 136.9,
+        "method": "OneMap footprint distance in EPSG:32643; zero means covered by polygon",
+        "onemap_fcode": "LD0004",
+        "onemap_island": "Maalhos"
+      },
+      "issues": [],
+      "name": "Maalhos Harbour",
+      "source_check": {
+        "expected_feature_type_supported_by_returned_tags": false,
+        "geometry_complete": true,
+        "issues": [
+          "source_geometry_more_than_1000m_from_csv_point",
+          "returned_tags_do_not_support_claimed_feature_type"
+        ],
+        "minimum_distance_to_osm_geometry_vertex_m": 4417601.3,
+        "osm_id": 456182904,
+        "osm_type": "way",
+        "returned_geometry_bounds": [
+          33.4066497,
+          -1.8879911,
+          33.4090344,
+          -1.8871093
+        ],
+        "returned_last_edit_utc": "2016-11-27T12:39:18Z",
+        "returned_tags": {
+          "highway": "path"
+        },
+        "returned_version": 1,
+        "scope": "Limited current OSM feature/type/geometry comparison; does not verify services, opening hours, ownership, licence or August 2025 operation",
+        "source_url": "https://www.openstreetmap.org/way/456182904",
+        "status": "source_mismatch"
+      },
+      "supplied_verification_status": "CORRECTED"
+    },
+    {
+      "atoll_code": "AA",
+      "csv_row": 20,
+      "island": "Mathiveri",
+      "island_geometry_check": {
+        "distance_from_island_footprint_m": 0.0,
+        "method": "OneMap footprint distance in EPSG:32643; zero means covered by polygon",
+        "onemap_fcode": "LD0132",
+        "onemap_island": "Mathiveri"
+      },
+      "issues": [],
+      "name": "Mathiveri Harbour",
+      "source_check": {
+        "expected_feature_type_supported_by_returned_tags": false,
+        "geometry_complete": true,
+        "issues": [
+          "source_geometry_more_than_1000m_from_csv_point",
+          "returned_tags_do_not_support_claimed_feature_type"
+        ],
+        "minimum_distance_to_osm_geometry_vertex_m": 4422897.1,
+        "osm_id": 456182905,
+        "osm_type": "way",
+        "returned_geometry_bounds": [
+          33.4084334,
+          -1.8870756,
+          33.409049,
+          -1.886021
+        ],
+        "returned_last_edit_utc": "2016-11-27T12:39:18Z",
+        "returned_tags": {
+          "highway": "path"
+        },
+        "returned_version": 1,
+        "scope": "Limited current OSM feature/type/geometry comparison; does not verify services, opening hours, ownership, licence or August 2025 operation",
+        "source_url": "https://www.openstreetmap.org/way/456182905",
+        "status": "source_mismatch"
+      },
+      "supplied_verification_status": "CORRECTED"
+    },
+    {
+      "atoll_code": "AA",
+      "csv_row": 21,
+      "island": "Thoddoo",
+      "island_geometry_check": {
+        "distance_from_island_footprint_m": 0.0,
+        "method": "OneMap footprint distance in EPSG:32643; zero means covered by polygon",
+        "onemap_fcode": "LD0501",
+        "onemap_island": "Thoddoo"
+      },
+      "issues": [],
+      "name": "Thoddoo Harbour",
+      "source_check": {
+        "expected_feature_type_supported_by_returned_tags": false,
+        "geometry_complete": true,
+        "issues": [
+          "source_geometry_more_than_1000m_from_csv_point",
+          "returned_tags_do_not_support_claimed_feature_type"
+        ],
+        "minimum_distance_to_osm_geometry_vertex_m": 13939255.3,
+        "osm_id": 456182906,
+        "osm_type": "way",
+        "returned_geometry_bounds": [
+          -54.215985,
+          -24.9942402,
+          -54.2143918,
+          -24.9929181
+        ],
+        "returned_last_edit_utc": "2016-11-27T12:39:31Z",
+        "returned_tags": {
+          "landuse": "farmland"
+        },
+        "returned_version": 1,
+        "scope": "Limited current OSM feature/type/geometry comparison; does not verify services, opening hours, ownership, licence or August 2025 operation",
+        "source_url": "https://www.openstreetmap.org/way/456182906",
+        "status": "source_mismatch"
+      },
+      "supplied_verification_status": "CORRECTED"
+    },
+    {
+      "atoll_code": "AA",
+      "csv_row": 22,
+      "island": "Ukulhas",
+      "island_geometry_check": {
+        "distance_from_island_footprint_m": 0.0,
+        "method": "OneMap footprint distance in EPSG:32643; zero means covered by polygon",
+        "onemap_fcode": "LD0916",
+        "onemap_island": "Ukulhas"
+      },
+      "issues": [],
+      "name": "Ukulhas Harbour",
+      "source_check": {
+        "expected_feature_type_supported_by_returned_tags": false,
+        "geometry_complete": true,
+        "issues": [
+          "source_geometry_more_than_1000m_from_csv_point",
+          "returned_tags_do_not_support_claimed_feature_type"
+        ],
+        "minimum_distance_to_osm_geometry_vertex_m": 13918339.4,
+        "osm_id": 456182907,
+        "osm_type": "way",
+        "returned_geometry_bounds": [
+          -54.2142751,
+          -24.9934596,
+          -54.2141684,
+          -24.9933642
+        ],
+        "returned_last_edit_utc": "2016-11-27T12:39:31Z",
+        "returned_tags": {
+          "building": "garage"
+        },
+        "returned_version": 1,
+        "scope": "Limited current OSM feature/type/geometry comparison; does not verify services, opening hours, ownership, licence or August 2025 operation",
+        "source_url": "https://www.openstreetmap.org/way/456182907",
+        "status": "source_mismatch"
+      },
+      "supplied_verification_status": "CORRECTED"
+    },
+    {
+      "atoll_code": "ADh",
+      "csv_row": 23,
+      "island": "Mahibadhoo",
+      "island_geometry_check": {
+        "distance_from_island_footprint_m": 0.0,
+        "method": "OneMap footprint distance in EPSG:32643; zero means covered by polygon",
+        "onemap_fcode": "LD0545",
+        "onemap_island": "Mahibadhoo"
+      },
+      "issues": [],
+      "name": "Mahibadhoo Harbour",
+      "source_check": {
+        "expected_feature_type_supported_by_returned_tags": false,
+        "geometry_complete": true,
+        "issues": [
+          "source_geometry_more_than_1000m_from_csv_point",
+          "returned_tags_do_not_support_claimed_feature_type"
+        ],
+        "minimum_distance_to_osm_geometry_vertex_m": 13904681.0,
+        "osm_id": 456182908,
+        "osm_type": "way",
+        "returned_geometry_bounds": [
+          -54.2139224,
+          -24.993269,
+          -54.2138224,
+          -24.9931834
+        ],
+        "returned_last_edit_utc": "2016-11-27T12:39:31Z",
+        "returned_tags": {
+          "building": "roof"
+        },
+        "returned_version": 1,
+        "scope": "Limited current OSM feature/type/geometry comparison; does not verify services, opening hours, ownership, licence or August 2025 operation",
+        "source_url": "https://www.openstreetmap.org/way/456182908",
+        "status": "source_mismatch"
+      },
+      "supplied_verification_status": "CORRECTED"
+    },
+    {
+      "atoll_code": "ADh",
+      "csv_row": 24,
+      "island": "Dhangethi",
+      "island_geometry_check": {
+        "distance_from_island_footprint_m": 0.0,
+        "method": "OneMap footprint distance in EPSG:32643; zero means covered by polygon",
+        "onemap_fcode": "LD0273",
+        "onemap_island": "Dhan'gethi"
+      },
+      "issues": [],
+      "name": "Dhangethi Harbour",
+      "source_check": {
+        "expected_feature_type_supported_by_returned_tags": false,
+        "geometry_complete": true,
+        "issues": [
+          "source_geometry_more_than_1000m_from_csv_point",
+          "returned_tags_do_not_support_claimed_feature_type"
+        ],
+        "minimum_distance_to_osm_geometry_vertex_m": 13895532.7,
+        "osm_id": 456182909,
+        "osm_type": "way",
+        "returned_geometry_bounds": [
+          -54.2141634,
+          -24.993383,
+          -54.2139341,
+          -24.9932128
+        ],
+        "returned_last_edit_utc": "2016-11-27T12:39:31Z",
+        "returned_tags": {
+          "building": "garage"
+        },
+        "returned_version": 1,
+        "scope": "Limited current OSM feature/type/geometry comparison; does not verify services, opening hours, ownership, licence or August 2025 operation",
+        "source_url": "https://www.openstreetmap.org/way/456182909",
+        "status": "source_mismatch"
+      },
+      "supplied_verification_status": "CORRECTED"
+    },
+    {
+      "atoll_code": "ADh",
+      "csv_row": 25,
+      "island": "Dhidhdhoo",
+      "island_geometry_check": {
+        "distance_from_island_footprint_m": 415.5,
+        "method": "OneMap footprint distance in EPSG:32643; zero means covered by polygon",
+        "onemap_fcode": "LD0459",
+        "onemap_island": "Dhidhdhoo"
+      },
+      "issues": [],
+      "name": "Dhidhdhoo Harbour",
+      "source_check": {
+        "expected_feature_type_supported_by_returned_tags": false,
+        "geometry_complete": true,
+        "issues": [
+          "source_geometry_more_than_1000m_from_csv_point",
+          "returned_tags_do_not_support_claimed_feature_type"
+        ],
+        "minimum_distance_to_osm_geometry_vertex_m": 8095574.1,
+        "osm_id": 456182910,
+        "osm_type": "way",
+        "returned_geometry_bounds": [
+          3.1232936,
+          42.5028278,
+          3.12333,
+          42.5028918
+        ],
+        "returned_last_edit_utc": "2016-11-27T12:39:38Z",
+        "returned_tags": {
+          "highway": "path"
+        },
+        "returned_version": 1,
+        "scope": "Limited current OSM feature/type/geometry comparison; does not verify services, opening hours, ownership, licence or August 2025 operation",
+        "source_url": "https://www.openstreetmap.org/way/456182910",
+        "status": "source_mismatch"
+      },
+      "supplied_verification_status": "CORRECTED"
+    },
+    {
+      "atoll_code": "ADh",
+      "csv_row": 26,
+      "island": "Dhigurah",
+      "island_geometry_check": {
+        "distance_from_island_footprint_m": 40.6,
+        "method": "OneMap footprint distance in EPSG:32643; zero means covered by polygon",
+        "onemap_fcode": "LD1047",
+        "onemap_island": "Dhigurah"
+      },
+      "issues": [],
+      "name": "Dhigurah Harbour",
+      "source_check": {
+        "expected_feature_type_supported_by_returned_tags": false,
+        "geometry_complete": true,
+        "issues": [
+          "source_geometry_more_than_1000m_from_csv_point",
+          "returned_tags_do_not_support_claimed_feature_type"
+        ],
+        "minimum_distance_to_osm_geometry_vertex_m": 8095063.4,
+        "osm_id": 456182911,
+        "osm_type": "way",
+        "returned_geometry_bounds": [
+          3.1232513,
+          42.5028918,
+          3.1232936,
+          42.5029794
+        ],
+        "returned_last_edit_utc": "2016-11-27T12:39:38Z",
+        "returned_tags": {
+          "bridge": "yes",
+          "highway": "path",
+          "layer": "1"
+        },
+        "returned_version": 1,
+        "scope": "Limited current OSM feature/type/geometry comparison; does not verify services, opening hours, ownership, licence or August 2025 operation",
+        "source_url": "https://www.openstreetmap.org/way/456182911",
+        "status": "source_mismatch"
+      },
+      "supplied_verification_status": "CORRECTED"
+    },
+    {
+      "atoll_code": "ADh",
+      "csv_row": 27,
+      "island": "Fenfushi",
+      "island_geometry_check": {
+        "distance_from_island_footprint_m": 35.2,
+        "method": "OneMap footprint distance in EPSG:32643; zero means covered by polygon",
+        "onemap_fcode": "LD0513",
+        "onemap_island": "Fenfushi"
+      },
+      "issues": [],
+      "name": "Fenfushi Harbour",
+      "source_check": {
+        "expected_feature_type_supported_by_returned_tags": false,
+        "geometry_complete": true,
+        "issues": [
+          "source_geometry_more_than_1000m_from_csv_point",
+          "returned_tags_do_not_support_claimed_feature_type"
+        ],
+        "minimum_distance_to_osm_geometry_vertex_m": 8086870.2,
+        "osm_id": 456182912,
+        "osm_type": "way",
+        "returned_geometry_bounds": [
+          3.1232467,
+          42.5029794,
+          3.1232513,
+          42.5029925
+        ],
+        "returned_last_edit_utc": "2016-11-27T12:39:38Z",
+        "returned_tags": {
+          "highway": "path"
+        },
+        "returned_version": 1,
+        "scope": "Limited current OSM feature/type/geometry comparison; does not verify services, opening hours, ownership, licence or August 2025 operation",
+        "source_url": "https://www.openstreetmap.org/way/456182912",
+        "status": "source_mismatch"
+      },
+      "supplied_verification_status": "CORRECTED"
+    },
+    {
+      "atoll_code": "ADh",
+      "csv_row": 28,
+      "island": "Hangnaameedhoo",
+      "island_geometry_check": {
+        "distance_from_island_footprint_m": 14983.1,
+        "method": "OneMap footprint distance in EPSG:32643; zero means covered by polygon",
+        "onemap_fcode": "LD1023",
+        "onemap_island": "Hangnaameedhoo"
+      },
+      "issues": [
+        "csv_point_more_than_1000m_outside_named_island_footprint"
+      ],
+      "name": "Hangnaameedhoo Harbour",
+      "source_check": {
+        "expected_feature_type_supported_by_returned_tags": false,
+        "geometry_complete": true,
+        "issues": [
+          "source_geometry_more_than_1000m_from_csv_point",
+          "returned_tags_do_not_support_claimed_feature_type"
+        ],
+        "minimum_distance_to_osm_geometry_vertex_m": 2656872.6,
+        "osm_id": 456182913,
+        "osm_type": "way",
+        "returned_geometry_bounds": [
+          86.9995716,
+          23.6610547,
+          87.00157,
+          23.6688909
+        ],
+        "returned_last_edit_utc": "2022-02-18T10:54:00Z",
+        "returned_tags": {
+          "highway": "tertiary"
+        },
+        "returned_version": 12,
+        "scope": "Limited current OSM feature/type/geometry comparison; does not verify services, opening hours, ownership, licence or August 2025 operation",
+        "source_url": "https://www.openstreetmap.org/way/456182913",
+        "status": "source_mismatch"
+      },
+      "supplied_verification_status": "CORRECTED"
+    },
+    {
+      "atoll_code": "ADh",
+      "csv_row": 29,
+      "island": "Kunburudhoo",
+      "island_geometry_check": {
+        "distance_from_island_footprint_m": 6006.2,
+        "method": "OneMap footprint distance in EPSG:32643; zero means covered by polygon",
+        "onemap_fcode": "LD0771",
+        "onemap_island": "Kun'burudhoo"
+      },
+      "issues": [
+        "csv_point_more_than_1000m_outside_named_island_footprint"
+      ],
+      "name": "Kunburudhoo Harbour",
+      "source_check": {
+        "expected_feature_type_supported_by_returned_tags": false,
+        "geometry_complete": true,
+        "issues": [
+          "source_geometry_more_than_1000m_from_csv_point",
+          "returned_tags_do_not_support_claimed_feature_type"
+        ],
+        "minimum_distance_to_osm_geometry_vertex_m": 8334682.9,
+        "osm_id": 456182914,
+        "osm_type": "way",
+        "returned_geometry_bounds": [
+          2.3625188,
+          51.0345194,
+          2.3642173,
+          51.036397
+        ],
+        "returned_last_edit_utc": "2024-09-29T21:48:32Z",
+        "returned_tags": {},
+        "returned_version": 6,
+        "scope": "Limited current OSM feature/type/geometry comparison; does not verify services, opening hours, ownership, licence or August 2025 operation",
+        "source_url": "https://www.openstreetmap.org/way/456182914",
+        "status": "source_mismatch"
+      },
+      "supplied_verification_status": "CORRECTED"
+    },
+    {
+      "atoll_code": "ADh",
+      "csv_row": 30,
+      "island": "Maamigili",
+      "island_geometry_check": {
+        "distance_from_island_footprint_m": 0.0,
+        "method": "OneMap footprint distance in EPSG:32643; zero means covered by polygon",
+        "onemap_fcode": "LD0158",
+        "onemap_island": "Maamigili"
+      },
+      "issues": [],
+      "name": "Maamigili Harbour",
+      "source_check": {
+        "expected_feature_type_supported_by_returned_tags": false,
+        "geometry_complete": true,
+        "issues": [
+          "source_geometry_more_than_1000m_from_csv_point",
+          "returned_tags_do_not_support_claimed_feature_type"
+        ],
+        "minimum_distance_to_osm_geometry_vertex_m": 8352173.3,
+        "osm_id": 456182915,
+        "osm_type": "way",
+        "returned_geometry_bounds": [
+          2.3586877,
+          51.031096,
+          2.3608185,
+          51.0343732
+        ],
+        "returned_last_edit_utc": "2018-10-01T05:55:50Z",
+        "returned_tags": {
+          "admin_level": "9",
+          "boundary": "administrative",
+          "source": "cadastre-dgi-fr source : Direction Générale des Finances Publiques - Cadastre. Mise à jour : 2013"
+        },
+        "returned_version": 3,
+        "scope": "Limited current OSM feature/type/geometry comparison; does not verify services, opening hours, ownership, licence or August 2025 operation",
+        "source_url": "https://www.openstreetmap.org/way/456182915",
+        "status": "source_mismatch"
+      },
+      "supplied_verification_status": "CORRECTED"
+    },
+    {
+      "atoll_code": "ADh",
+      "csv_row": 31,
+      "island": "Mandhoo",
+      "island_geometry_check": {
+        "distance_from_island_footprint_m": 24.0,
+        "method": "OneMap footprint distance in EPSG:32643; zero means covered by polygon",
+        "onemap_fcode": "LD0168",
+        "onemap_island": "Mandhoo"
+      },
+      "issues": [],
+      "name": "Mandhoo Harbour",
+      "source_check": {
+        "expected_feature_type_supported_by_returned_tags": false,
+        "geometry_complete": true,
+        "issues": [
+          "source_geometry_more_than_1000m_from_csv_point",
+          "returned_tags_do_not_support_claimed_feature_type"
+        ],
+        "minimum_distance_to_osm_geometry_vertex_m": 8323545.1,
+        "osm_id": 456182916,
+        "osm_type": "way",
+        "returned_geometry_bounds": [
+          2.3606483,
+          51.0310763,
+          2.3608185,
+          51.031096
+        ],
+        "returned_last_edit_utc": "2016-11-27T12:40:03Z",
+        "returned_tags": {},
+        "returned_version": 1,
+        "scope": "Limited current OSM feature/type/geometry comparison; does not verify services, opening hours, ownership, licence or August 2025 operation",
+        "source_url": "https://www.openstreetmap.org/way/456182916",
+        "status": "source_mismatch"
+      },
+      "supplied_verification_status": "CORRECTED"
+    },
+    {
+      "atoll_code": "ADh",
+      "csv_row": 32,
+      "island": "Omadhoo",
+      "island_geometry_check": {
+        "distance_from_island_footprint_m": 3522.7,
+        "method": "OneMap footprint distance in EPSG:32643; zero means covered by polygon",
+        "onemap_fcode": "LD0009",
+        "onemap_island": "Omadhoo"
+      },
+      "issues": [
+        "csv_point_more_than_1000m_outside_named_island_footprint"
+      ],
+      "name": "Omadhoo Harbour",
+      "source_check": {
+        "expected_feature_type_supported_by_returned_tags": false,
+        "geometry_complete": true,
+        "issues": [
+          "source_geometry_more_than_1000m_from_csv_point",
+          "returned_tags_do_not_support_claimed_feature_type",
+          "returned_feature_name_differs_from_claimed_name"
+        ],
+        "minimum_distance_to_osm_geometry_vertex_m": 8330328.5,
+        "osm_id": 456182917,
+        "osm_type": "way",
+        "returned_geometry_bounds": [
+          2.3606483,
+          51.0310759,
+          2.3613909,
+          51.0311389
+        ],
+        "returned_last_edit_utc": "2025-09-23T20:35:25Z",
+        "returned_tags": {
+          "bicycle": "yes",
+          "cycleway": "no",
+          "foot": "yes",
+          "highway": "residential",
+          "maxspeed": "50",
+          "name": "Rue Jean Macé",
+          "oneway": "no",
+          "ref:FR:FANTOIR": "591833655",
+          "sidewalk": "both",
+          "surface": "asphalt"
+        },
+        "returned_version": 6,
+        "scope": "Limited current OSM feature/type/geometry comparison; does not verify services, opening hours, ownership, licence or August 2025 operation",
+        "source_url": "https://www.openstreetmap.org/way/456182917",
+        "status": "source_mismatch"
+      },
+      "supplied_verification_status": "CORRECTED"
+    },
+    {
+      "atoll_code": "K",
+      "csv_row": 33,
+      "island": "Kaashidhoo",
+      "island_geometry_check": {
+        "distance_from_island_footprint_m": 0.0,
+        "method": "OneMap footprint distance in EPSG:32643; zero means covered by polygon",
+        "onemap_fcode": "LD0665",
+        "onemap_island": "Kaashidhoo"
+      },
+      "issues": [],
+      "name": "Kaashidhoo Harbour",
+      "source_check": {
+        "expected_feature_type_supported_by_returned_tags": false,
+        "geometry_complete": true,
+        "issues": [
+          "source_geometry_more_than_1000m_from_csv_point",
+          "returned_tags_do_not_support_claimed_feature_type",
+          "returned_feature_name_differs_from_claimed_name"
+        ],
+        "minimum_distance_to_osm_geometry_vertex_m": 8265600.1,
+        "osm_id": 456182918,
+        "osm_type": "way",
+        "returned_geometry_bounds": [
+          2.3543344,
+          51.0307493,
+          2.3570403,
+          51.0308867
+        ],
+        "returned_last_edit_utc": "2025-09-27T20:35:14Z",
+        "returned_tags": {
+          "bicycle": "yes",
+          "cycleway": "no",
+          "foot": "yes",
+          "highway": "residential",
+          "maxspeed": "50",
+          "name": "Rue Jean Macé",
+          "oneway": "no",
+          "ref:FR:FANTOIR": "591833655",
+          "sidewalk": "both",
+          "surface": "asphalt"
+        },
+        "returned_version": 8,
+        "scope": "Limited current OSM feature/type/geometry comparison; does not verify services, opening hours, ownership, licence or August 2025 operation",
+        "source_url": "https://www.openstreetmap.org/way/456182918",
+        "status": "source_mismatch"
+      },
+      "supplied_verification_status": "CORRECTED"
+    },
+    {
+      "atoll_code": "K",
+      "csv_row": 34,
+      "island": "Gaafaru",
+      "island_geometry_check": {
+        "distance_from_island_footprint_m": 10.0,
+        "method": "OneMap footprint distance in EPSG:32643; zero means covered by polygon",
+        "onemap_fcode": "LD0873",
+        "onemap_island": "Gaafaru"
+      },
+      "issues": [],
+      "name": "Gaafaru Harbour",
+      "source_check": {
+        "expected_feature_type_supported_by_returned_tags": false,
+        "geometry_complete": true,
+        "issues": [
+          "source_geometry_more_than_1000m_from_csv_point",
+          "returned_tags_do_not_support_claimed_feature_type",
+          "returned_feature_name_differs_from_claimed_name"
+        ],
+        "minimum_distance_to_osm_geometry_vertex_m": 8287207.0,
+        "osm_id": 456182919,
+        "osm_type": "way",
+        "returned_geometry_bounds": [
+          2.3570403,
+          51.0299789,
+          2.357219,
+          51.0308867
+        ],
+        "returned_last_edit_utc": "2025-09-23T20:35:25Z",
+        "returned_tags": {
+          "bicycle": "yes",
+          "cycleway": "no",
+          "foot": "yes",
+          "highway": "residential",
+          "maxspeed": "50",
+          "name": "Rue Faidherbe",
+          "oneway": "no",
+          "ref:FR:FANTOIR": "591833598",
+          "sidewalk": "both",
+          "surface": "asphalt"
+        },
+        "returned_version": 6,
+        "scope": "Limited current OSM feature/type/geometry comparison; does not verify services, opening hours, ownership, licence or August 2025 operation",
+        "source_url": "https://www.openstreetmap.org/way/456182919",
+        "status": "source_mismatch"
+      },
+      "supplied_verification_status": "CORRECTED"
+    },
+    {
+      "atoll_code": "K",
+      "csv_row": 35,
+      "island": "Dhiffushi",
+      "island_geometry_check": {
+        "distance_from_island_footprint_m": 47.6,
+        "method": "OneMap footprint distance in EPSG:32643; zero means covered by polygon",
+        "onemap_fcode": "LD0894",
+        "onemap_island": "Dhiffushi"
+      },
+      "issues": [],
+      "name": "Dhiffushi Harbour",
+      "source_check": {
+        "expected_feature_type_supported_by_returned_tags": false,
+        "geometry_complete": true,
+        "issues": [
+          "source_geometry_more_than_1000m_from_csv_point",
+          "returned_tags_do_not_support_claimed_feature_type",
+          "returned_feature_name_differs_from_claimed_name"
+        ],
+        "minimum_distance_to_osm_geometry_vertex_m": 8327387.0,
+        "osm_id": 456182920,
+        "osm_type": "way",
+        "returned_geometry_bounds": [
+          2.3545437,
+          51.0297921,
+          2.357219,
+          51.0299789
+        ],
+        "returned_last_edit_utc": "2025-05-27T16:00:48Z",
+        "returned_tags": {
+          "bicycle": "yes",
+          "cycleway": "no",
+          "foot": "yes",
+          "highway": "residential",
+          "maxspeed": "50",
+          "name": "Rue Marcellin Berthelot",
+          "oneway": "no",
+          "ref:FR:FANTOIR": "591833679",
+          "sidewalk": "both",
+          "source": "Bing",
+          "surface": "asphalt"
+        },
+        "returned_version": 4,
+        "scope": "Limited current OSM feature/type/geometry comparison; does not verify services, opening hours, ownership, licence or August 2025 operation",
+        "source_url": "https://www.openstreetmap.org/way/456182920",
+        "status": "source_mismatch"
+      },
+      "supplied_verification_status": "CORRECTED"
+    },
+    {
+      "atoll_code": "K",
+      "csv_row": 36,
+      "island": "Thulusdhoo",
+      "island_geometry_check": {
+        "distance_from_island_footprint_m": 0.0,
+        "method": "OneMap footprint distance in EPSG:32643; zero means covered by polygon",
+        "onemap_fcode": "LD0745",
+        "onemap_island": "Thulusdhoo"
+      },
+      "issues": [],
+      "name": "Thulusdhoo Harbour",
+      "source_check": {
+        "expected_feature_type_supported_by_returned_tags": false,
+        "geometry_complete": true,
+        "issues": [
+          "source_geometry_more_than_1000m_from_csv_point",
+          "returned_tags_do_not_support_claimed_feature_type",
+          "returned_feature_name_differs_from_claimed_name"
+        ],
+        "minimum_distance_to_osm_geometry_vertex_m": 8329016.6,
+        "osm_id": 456182921,
+        "osm_type": "way",
+        "returned_geometry_bounds": [
+          2.357219,
+          51.0289773,
+          2.3574094,
+          51.0299789
+        ],
+        "returned_last_edit_utc": "2025-09-27T20:40:16Z",
+        "returned_tags": {
+          "bicycle": "yes",
+          "cycleway": "no",
+          "foot": "yes",
+          "highway": "residential",
+          "maxspeed": "50",
+          "name": "Rue Faidherbe",
+          "oneway": "no",
+          "ref:FR:FANTOIR": "591833598",
+          "sidewalk": "both",
+          "surface": "asphalt"
+        },
+        "returned_version": 8,
+        "scope": "Limited current OSM feature/type/geometry comparison; does not verify services, opening hours, ownership, licence or August 2025 operation",
+        "source_url": "https://www.openstreetmap.org/way/456182921",
+        "status": "source_mismatch"
+      },
+      "supplied_verification_status": "CORRECTED"
+    },
+    {
+      "atoll_code": "K",
+      "csv_row": 37,
+      "island": "Huraa",
+      "island_geometry_check": {
+        "distance_from_island_footprint_m": 0.0,
+        "method": "OneMap footprint distance in EPSG:32643; zero means covered by polygon",
+        "onemap_fcode": "LD0683",
+        "onemap_island": "Huraa"
+      },
+      "issues": [],
+      "name": "Huraa Harbour",
+      "source_check": {
+        "expected_feature_type_supported_by_returned_tags": false,
+        "geometry_complete": true,
+        "issues": [
+          "source_geometry_more_than_1000m_from_csv_point",
+          "returned_tags_do_not_support_claimed_feature_type",
+          "returned_feature_name_differs_from_claimed_name"
+        ],
+        "minimum_distance_to_osm_geometry_vertex_m": 8329213.6,
+        "osm_id": 456182922,
+        "osm_type": "way",
+        "returned_geometry_bounds": [
+          2.3545437,
+          51.0287961,
+          2.3547516,
+          51.0297921
+        ],
+        "returned_last_edit_utc": "2025-09-23T20:35:25Z",
+        "returned_tags": {
+          "bicycle": "yes",
+          "cycleway": "no",
+          "foot": "yes",
+          "highway": "residential",
+          "maxspeed": "50",
+          "name": "Rue Étienne Dolet",
+          "oneway": "yes",
+          "ref:FR:FANTOIR": "591833590",
+          "sidewalk": "both",
+          "surface": "asphalt"
+        },
+        "returned_version": 6,
+        "scope": "Limited current OSM feature/type/geometry comparison; does not verify services, opening hours, ownership, licence or August 2025 operation",
+        "source_url": "https://www.openstreetmap.org/way/456182922",
+        "status": "source_mismatch"
+      },
+      "supplied_verification_status": "CORRECTED"
+    },
+    {
+      "atoll_code": "K",
+      "csv_row": 38,
+      "island": "Himmafushi",
+      "island_geometry_check": {
+        "distance_from_island_footprint_m": 0.0,
+        "method": "OneMap footprint distance in EPSG:32643; zero means covered by polygon",
+        "onemap_fcode": "LD1129",
+        "onemap_island": "Hinmafushi"
+      },
+      "issues": [],
+      "name": "Himmafushi Harbour",
+      "source_check": {
+        "issues": [
+          "current_object_is_marked_not_visible"
+        ],
+        "osm_id": 456182923,
+        "osm_type": "way",
+        "returned_last_edit_utc": "2018-03-25T14:54:46Z",
+        "returned_tags": {},
+        "returned_version": 3,
+        "source_url": "https://www.openstreetmap.org/way/456182923",
+        "status": "feature_deleted"
+      },
+      "supplied_verification_status": "CORRECTED"
+    },
+    {
+      "atoll_code": "K",
+      "csv_row": 39,
+      "island": "Gulhi",
+      "island_geometry_check": {
+        "distance_from_island_footprint_m": 114.5,
+        "method": "OneMap footprint distance in EPSG:32643; zero means covered by polygon",
+        "onemap_fcode": "LD0577",
+        "onemap_island": "Gulhi"
+      },
+      "issues": [],
+      "name": "Gulhi Harbour",
+      "source_check": {
+        "issues": [
+          "current_object_is_marked_not_visible"
+        ],
+        "osm_id": 456182924,
+        "osm_type": "way",
+        "returned_last_edit_utc": "2021-06-20T11:13:17Z",
+        "returned_tags": {},
+        "returned_version": 3,
+        "source_url": "https://www.openstreetmap.org/way/456182924",
+        "status": "feature_deleted"
+      },
+      "supplied_verification_status": "CORRECTED"
+    },
+    {
+      "atoll_code": "K",
+      "csv_row": 40,
+      "island": "Maafushi",
+      "island_geometry_check": {
+        "distance_from_island_footprint_m": 0.0,
+        "method": "OneMap footprint distance in EPSG:32643; zero means covered by polygon",
+        "onemap_fcode": "LD0069",
+        "onemap_island": "Maafushi"
+      },
+      "issues": [],
+      "name": "Maafushi Harbour",
+      "source_check": {
+        "issues": [
+          "current_object_is_marked_not_visible"
+        ],
+        "osm_id": 456182925,
+        "osm_type": "way",
+        "returned_last_edit_utc": "2024-10-09T08:47:36Z",
+        "returned_tags": {},
+        "returned_version": 4,
+        "source_url": "https://www.openstreetmap.org/way/456182925",
+        "status": "feature_deleted"
+      },
+      "supplied_verification_status": "CORRECTED"
+    },
+    {
+      "atoll_code": "K",
+      "csv_row": 41,
+      "island": "Maafushi",
+      "island_geometry_check": {
+        "distance_from_island_footprint_m": 3734.8,
+        "method": "OneMap footprint distance in EPSG:32643; zero means covered by polygon",
+        "onemap_fcode": "LD0069",
+        "onemap_island": "Maafushi"
+      },
+      "issues": [
+        "supplied_audit_marks_record_invalid",
+        "csv_point_more_than_1000m_outside_named_island_footprint"
+      ],
+      "name": "Maafushi Recreation Jetty",
+      "source_check": {
+        "issues": [
+          "generic_source_url_does_not_verify_a_specific_feature"
+        ],
+        "scope": "No independent facility/service confirmation from this generic URL",
+        "source_url": "https://www.openstreetmap.org/",
+        "status": "no_direct_osm_feature"
+      },
+      "supplied_verification_status": "INVALID"
+    },
+    {
+      "atoll_code": "K",
+      "csv_row": 42,
+      "island": "Guraidhoo",
+      "island_geometry_check": {
+        "distance_from_island_footprint_m": 2.0,
+        "method": "OneMap footprint distance in EPSG:32643; zero means covered by polygon",
+        "onemap_fcode": "LD0738",
+        "onemap_island": "Guraidhoo"
+      },
+      "issues": [],
+      "name": "Guraidhoo Harbour",
+      "source_check": {
+        "issues": [
+          "current_object_is_marked_not_visible"
+        ],
+        "osm_id": 456182926,
+        "osm_type": "way",
+        "returned_last_edit_utc": "2022-10-15T15:08:43Z",
+        "returned_tags": {},
+        "returned_version": 3,
+        "source_url": "https://www.openstreetmap.org/way/456182926",
+        "status": "feature_deleted"
+      },
+      "supplied_verification_status": "CORRECTED"
+    },
+    {
+      "atoll_code": "V",
+      "csv_row": 43,
+      "island": "Felidhoo",
+      "island_geometry_check": {
+        "distance_from_island_footprint_m": 0.0,
+        "method": "OneMap footprint distance in EPSG:32643; zero means covered by polygon",
+        "onemap_fcode": "LD0075",
+        "onemap_island": "Felidhoo"
+      },
+      "issues": [],
+      "name": "Felidhoo Harbour",
+      "source_check": {
+        "expected_feature_type_supported_by_returned_tags": false,
+        "geometry_complete": true,
+        "issues": [
+          "source_geometry_more_than_1000m_from_csv_point",
+          "returned_tags_do_not_support_claimed_feature_type"
+        ],
+        "minimum_distance_to_osm_geometry_vertex_m": 8291771.4,
+        "osm_id": 456182927,
+        "osm_type": "way",
+        "returned_geometry_bounds": [
+          3.9886748,
+          51.0965485,
+          3.9889068,
+          51.0966326
+        ],
+        "returned_last_edit_utc": "2025-04-08T15:53:41Z",
+        "returned_tags": {
+          "addr:housenumber": "89",
+          "addr:street": "Heilig-Hartlaan",
+          "building": "house",
+          "source:geometry": "GRB",
+          "source:geometry:date": "2008-09-26",
+          "source:geometry:ref": "Gbg/948284"
+        },
+        "returned_version": 3,
+        "scope": "Limited current OSM feature/type/geometry comparison; does not verify services, opening hours, ownership, licence or August 2025 operation",
+        "source_url": "https://www.openstreetmap.org/way/456182927",
+        "status": "source_mismatch"
+      },
+      "supplied_verification_status": "CORRECTED"
+    },
+    {
+      "atoll_code": "V",
+      "csv_row": 44,
+      "island": "Fulidhoo",
+      "island_geometry_check": {
+        "distance_from_island_footprint_m": 12292.2,
+        "method": "OneMap footprint distance in EPSG:32643; zero means covered by polygon",
+        "onemap_fcode": "LD0182",
+        "onemap_island": "Fulidhoo"
+      },
+      "issues": [
+        "csv_point_more_than_1000m_outside_named_island_footprint"
+      ],
+      "name": "Fulidhoo Harbour",
+      "source_check": {
+        "expected_feature_type_supported_by_returned_tags": false,
+        "geometry_complete": true,
+        "issues": [
+          "source_geometry_more_than_1000m_from_csv_point",
+          "returned_tags_do_not_support_claimed_feature_type"
+        ],
+        "minimum_distance_to_osm_geometry_vertex_m": 8272068.5,
+        "osm_id": 456182928,
+        "osm_type": "way",
+        "returned_geometry_bounds": [
+          3.9905325,
+          51.0961699,
+          3.9906291,
+          51.0962183
+        ],
+        "returned_last_edit_utc": "2019-05-10T05:45:47Z",
+        "returned_tags": {
+          "building": "shed",
+          "source:geometry": "GRB",
+          "source:geometry:date": "2015-09-05",
+          "source:geometry:ref": "Gbg/5295202"
+        },
+        "returned_version": 2,
+        "scope": "Limited current OSM feature/type/geometry comparison; does not verify services, opening hours, ownership, licence or August 2025 operation",
+        "source_url": "https://www.openstreetmap.org/way/456182928",
+        "status": "source_mismatch"
+      },
+      "supplied_verification_status": "CORRECTED"
+    },
+    {
+      "atoll_code": "V",
+      "csv_row": 45,
+      "island": "Keyodhoo",
+      "island_geometry_check": {
+        "distance_from_island_footprint_m": 0.0,
+        "method": "OneMap footprint distance in EPSG:32643; zero means covered by polygon",
+        "onemap_fcode": "LD0260",
+        "onemap_island": "Keyodhoo"
+      },
+      "issues": [],
+      "name": "Keyodhoo Harbour",
+      "source_check": {
+        "expected_feature_type_supported_by_returned_tags": false,
+        "geometry_complete": true,
+        "issues": [
+          "source_geometry_more_than_1000m_from_csv_point",
+          "returned_tags_do_not_support_claimed_feature_type"
+        ],
+        "minimum_distance_to_osm_geometry_vertex_m": 8292716.9,
+        "osm_id": 456182929,
+        "osm_type": "way",
+        "returned_geometry_bounds": [
+          3.9907857,
+          51.0966355,
+          3.9909869,
+          51.0967435
+        ],
+        "returned_last_edit_utc": "2022-10-15T15:08:43Z",
+        "returned_tags": {
+          "addr:housenumber": "71",
+          "addr:street": "Hovenierstraat",
+          "building": "house",
+          "source:geometry": "GRB",
+          "source:geometry:date": "2018-07-03",
+          "source:geometry:ref": "Gbg/6379005"
+        },
+        "returned_version": 3,
+        "scope": "Limited current OSM feature/type/geometry comparison; does not verify services, opening hours, ownership, licence or August 2025 operation",
+        "source_url": "https://www.openstreetmap.org/way/456182929",
+        "status": "source_mismatch"
+      },
+      "supplied_verification_status": "CORRECTED"
+    },
+    {
+      "atoll_code": "V",
+      "csv_row": 46,
+      "island": "Rakeedhoo",
+      "island_geometry_check": {
+        "distance_from_island_footprint_m": 578.3,
+        "method": "OneMap footprint distance in EPSG:32643; zero means covered by polygon",
+        "onemap_fcode": "LD0420",
+        "onemap_island": "Rakeedhoo"
+      },
+      "issues": [],
+      "name": "Rakeedhoo Harbour",
+      "source_check": {
+        "expected_feature_type_supported_by_returned_tags": false,
+        "geometry_complete": true,
+        "issues": [
+          "source_geometry_more_than_1000m_from_csv_point",
+          "returned_tags_do_not_support_claimed_feature_type"
+        ],
+        "minimum_distance_to_osm_geometry_vertex_m": 8299818.5,
+        "osm_id": 456182930,
+        "osm_type": "way",
+        "returned_geometry_bounds": [
+          3.9912435,
+          51.0965491,
+          3.9914968,
+          51.0966427
+        ],
+        "returned_last_edit_utc": "2023-12-26T17:19:10Z",
+        "returned_tags": {
+          "addr:housenumber": "82",
+          "addr:street": "Hovenierstraat",
+          "building": "house",
+          "source:geometry": "GRB",
+          "source:geometry:date": "2015-09-05",
+          "source:geometry:ref": "Gbg/947914"
+        },
+        "returned_version": 3,
+        "scope": "Limited current OSM feature/type/geometry comparison; does not verify services, opening hours, ownership, licence or August 2025 operation",
+        "source_url": "https://www.openstreetmap.org/way/456182930",
+        "status": "source_mismatch"
+      },
+      "supplied_verification_status": "CORRECTED"
+    },
+    {
+      "atoll_code": "V",
+      "csv_row": 47,
+      "island": "Thinadhoo",
+      "island_geometry_check": {
+        "distance_from_island_footprint_m": 0.0,
+        "method": "OneMap footprint distance in EPSG:32643; zero means covered by polygon",
+        "onemap_fcode": "LD1079",
+        "onemap_island": "Thinadhoo"
+      },
+      "issues": [],
+      "name": "Thinadhoo Harbour",
+      "source_check": {
+        "expected_feature_type_supported_by_returned_tags": false,
+        "geometry_complete": true,
+        "issues": [
+          "source_geometry_more_than_1000m_from_csv_point",
+          "returned_tags_do_not_support_claimed_feature_type"
+        ],
+        "minimum_distance_to_osm_geometry_vertex_m": 8289692.6,
+        "osm_id": 456182931,
+        "osm_type": "way",
+        "returned_geometry_bounds": [
+          3.9915595,
+          51.0964772,
+          3.9917627,
+          51.0965639
+        ],
+        "returned_last_edit_utc": "2022-10-15T15:08:43Z",
+        "returned_tags": {
+          "building": "house",
+          "source:geometry": "GRB",
+          "source:geometry:date": "2016-10-17",
+          "source:geometry:ref": "Gbg/5725346"
+        },
+        "returned_version": 3,
+        "scope": "Limited current OSM feature/type/geometry comparison; does not verify services, opening hours, ownership, licence or August 2025 operation",
+        "source_url": "https://www.openstreetmap.org/way/456182931",
+        "status": "source_mismatch"
+      },
+      "supplied_verification_status": "CORRECTED"
+    }
+  ],
+  "semantic_missing_counts": {
+    "atoll_code": 0,
+    "change_note": 0,
+    "coordinate_quality": 0,
+    "island": 0,
+    "latitude": 0,
+    "licence": 0,
+    "longitude": 0,
+    "notes": 0,
+    "opening_hours_if_listed": 43,
+    "operator": 39,
+    "original_value": 10,
+    "retrieval_date": 0,
+    "services_listed": 1,
+    "source_name": 0,
+    "source_url": 0,
+    "terminal_name": 0,
+    "terminal_name_dhivehi_if_known": 1,
+    "terminal_type": 0,
+    "verification_status": 0,
+    "verified_url": 0,
+    "what_was_checked": 0
+  },
+  "source_check_status_counts": {
+    "feature_deleted": 6,
+    "no_direct_osm_feature": 1,
+    "source_mismatch": 39
+  }
+}

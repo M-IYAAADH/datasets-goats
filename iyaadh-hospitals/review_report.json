@@ -1,0 +1,1870 @@
+{
+  "blank_counts": {
+    "atoll_code": 0,
+    "change_note": 0,
+    "coordinate_quality": 0,
+    "facility_name": 0,
+    "facility_name_dhivehi_if_known": 0,
+    "facility_type": 0,
+    "island": 0,
+    "latitude": 0,
+    "licence": 0,
+    "longitude": 0,
+    "notes": 0,
+    "opening_hours_if_listed": 0,
+    "original_value": 0,
+    "public_or_private": 0,
+    "retrieval_date": 0,
+    "services_listed": 0,
+    "source_name": 0,
+    "source_url": 0,
+    "verification_status": 0,
+    "verified_url": 0,
+    "what_was_checked": 0
+  },
+  "column_count": 21,
+  "columns": [
+    "facility_name",
+    "facility_name_dhivehi_if_known",
+    "facility_type",
+    "island",
+    "atoll_code",
+    "latitude",
+    "longitude",
+    "coordinate_quality",
+    "public_or_private",
+    "services_listed",
+    "opening_hours_if_listed",
+    "source_url",
+    "source_name",
+    "retrieval_date",
+    "licence",
+    "notes",
+    "verification_status",
+    "verified_url",
+    "what_was_checked",
+    "original_value",
+    "change_note"
+  ],
+  "coordinate_collision_groups": [
+    [
+      7,
+      10
+    ],
+    [
+      17,
+      21
+    ]
+  ],
+  "coordinate_note": "Coordinate collisions can be intentional island proxies and are not automatically duplicate facilities.",
+  "counts": {
+    "atoll_code": {
+      "AA": 9,
+      "ADh": 11,
+      "K": 9,
+      "Male City": 13,
+      "V": 5
+    },
+    "coordinate_quality": {
+      "LOCATED-BY-ISLAND-ONLY": 39,
+      "source-provided": 8
+    },
+    "licence": {
+      "ODbL 1.0": 39,
+      "terms not stated": 8
+    },
+    "verification_status": {
+      "CORRECTED": 37,
+      "UNVERIFIED": 6,
+      "VERIFIED": 4
+    }
+  },
+  "dataset_status": "review_copy_with_unresolved_source_issues",
+  "duplicate_normalized_name_island_groups": [],
+  "exact_duplicate_row_groups": [],
+  "method": {
+    "csv_row_number": "Header is row 1; first data record is row 2",
+    "geography_input": {
+      "attribution": "OneMap Geomatics Department, Ministry of Infrastructure, Housing and Urban Development; https://readme.onemap.mv/pdf/Data%20Usage%20License.pdf",
+      "note": "Existing public reference read only; no FollowMe GPS or pipeline outputs included. Polygons downloaded 2026-10-24; not a confirmed August 2025 shoreline.",
+      "original_path": "datathon-2026/data/reference/followme/onemap_study_islands.geojson",
+      "sha256": "028d86db440078616cc207a3a05aa6a17828afafba9540cd0ca2fd22c25e8031"
+    },
+    "limitations": [
+      "Current feature checks do not establish August 2025 availability.",
+      "Generic government URLs were inspected in a browser but individual clinic entries, services, ownership and opening hours were not independently confirmed.",
+      "CSV VERIFIED/CORRECTED labels are original supplier assertions, not this review outcome."
+    ],
+    "name_normalization": "ASCII diacritic folding and punctuation removal; explicit input-name aliases Villimale→Vilingili and Himmafushi→Hinmafushi; no nearest-island assignment",
+    "polygon_distance_note": "Diagnostic threshold only, not a legal territorial boundary.",
+    "polygon_distance_threshold_m": 1000,
+    "source_checks": "Current public OSM API, exact cited node/way IDs; cached response bytes and HTTP receipts in review_sources/",
+    "source_geometry_distance": "WGS84 great-circle minimum to returned OSM node/way vertices, not a full polygon distance. A 1000 m diagnostic threshold identifies obvious source mismatches and is not an accuracy guarantee.",
+    "supplied_file_unchanged": true
+  },
+  "original_file": "health_facilities_audited.csv",
+  "original_sha256": "fa3b62076c9df79aea092d8ff1b0734c510bea8fadbe7ead93e7827afaff51c2",
+  "review_date": "2026-10-24",
+  "row_count": 47,
+  "rows": [
+    {
+      "atoll_code": "AA",
+      "csv_row": 2,
+      "island": "Rasdhoo",
+      "island_geometry_check": {
+        "distance_from_island_footprint_m": 0.0,
+        "method": "OneMap footprint distance in EPSG:32643; zero means covered by polygon",
+        "onemap_fcode": "LD0257",
+        "onemap_island": "Rasdhoo"
+      },
+      "issues": [],
+      "name": "Alifu Alifu Atoll Hospital",
+      "source_check": {
+        "expected_feature_type_supported_by_returned_tags": false,
+        "geometry_complete": true,
+        "issues": [
+          "source_geometry_more_than_1000m_from_csv_point",
+          "returned_tags_do_not_support_claimed_feature_type"
+        ],
+        "minimum_distance_to_osm_geometry_vertex_m": 15419636.9,
+        "osm_id": 9634731113,
+        "osm_type": "node",
+        "returned_geometry_bounds": [
+          -87.325387,
+          32.6052109,
+          -87.325387,
+          32.6052109
+        ],
+        "returned_last_edit_utc": "2022-04-04T03:34:10Z",
+        "returned_tags": {},
+        "returned_version": 1,
+        "scope": "Limited current OSM feature/type/geometry comparison; does not verify services, opening hours, ownership, licence or August 2025 operation",
+        "source_url": "https://www.openstreetmap.org/node/9634731113",
+        "status": "source_mismatch"
+      },
+      "supplied_verification_status": "CORRECTED"
+    },
+    {
+      "atoll_code": "AA",
+      "csv_row": 3,
+      "island": "Bodufolhudhoo",
+      "island_geometry_check": {
+        "distance_from_island_footprint_m": 0.0,
+        "method": "OneMap footprint distance in EPSG:32643; zero means covered by polygon",
+        "onemap_fcode": "LD0474",
+        "onemap_island": "Bodufolhudhoo"
+      },
+      "issues": [
+        "island_proxy_is_not_a_facility_building_location"
+      ],
+      "name": "AA. Bodufolhudhoo Health Centre",
+      "source_check": {
+        "expected_feature_type_supported_by_returned_tags": false,
+        "geometry_complete": true,
+        "issues": [
+          "source_geometry_more_than_1000m_from_csv_point",
+          "returned_tags_do_not_support_claimed_feature_type"
+        ],
+        "minimum_distance_to_osm_geometry_vertex_m": 3361258.6,
+        "osm_id": 2167184200,
+        "osm_type": "node",
+        "returned_geometry_bounds": [
+          42.7184057,
+          0.6579636,
+          42.7184057,
+          0.6579636
+        ],
+        "returned_last_edit_utc": "2020-02-17T17:53:42Z",
+        "returned_tags": {},
+        "returned_version": 2,
+        "scope": "Limited current OSM feature/type/geometry comparison; does not verify services, opening hours, ownership, licence or August 2025 operation",
+        "source_url": "https://www.openstreetmap.org/node/2167184200",
+        "status": "source_mismatch"
+      },
+      "supplied_verification_status": "CORRECTED"
+    },
+    {
+      "atoll_code": "AA",
+      "csv_row": 4,
+      "island": "Feridhoo",
+      "island_geometry_check": {
+        "distance_from_island_footprint_m": 30.8,
+        "method": "OneMap footprint distance in EPSG:32643; zero means covered by polygon",
+        "onemap_fcode": "LD0287",
+        "onemap_island": "Feridhoo"
+      },
+      "issues": [
+        "island_proxy_is_not_a_facility_building_location"
+      ],
+      "name": "AA. Feridhoo Health Centre",
+      "source_check": {
+        "expected_feature_type_supported_by_returned_tags": false,
+        "geometry_complete": true,
+        "issues": [
+          "source_geometry_more_than_1000m_from_csv_point",
+          "returned_tags_do_not_support_claimed_feature_type"
+        ],
+        "minimum_distance_to_osm_geometry_vertex_m": 8375575.8,
+        "osm_id": 2167184201,
+        "osm_type": "node",
+        "returned_geometry_bounds": [
+          1.7225037,
+          52.5961194,
+          1.7225037,
+          52.5961194
+        ],
+        "returned_last_edit_utc": "2013-02-22T16:28:56Z",
+        "returned_tags": {},
+        "returned_version": 1,
+        "scope": "Limited current OSM feature/type/geometry comparison; does not verify services, opening hours, ownership, licence or August 2025 operation",
+        "source_url": "https://www.openstreetmap.org/node/2167184201",
+        "status": "source_mismatch"
+      },
+      "supplied_verification_status": "CORRECTED"
+    },
+    {
+      "atoll_code": "AA",
+      "csv_row": 5,
+      "island": "Himandhoo",
+      "island_geometry_check": {
+        "distance_from_island_footprint_m": 0.0,
+        "method": "OneMap footprint distance in EPSG:32643; zero means covered by polygon",
+        "onemap_fcode": "LD0874",
+        "onemap_island": "Himandhoo"
+      },
+      "issues": [
+        "island_proxy_is_not_a_facility_building_location"
+      ],
+      "name": "AA. Himandhoo Health Centre",
+      "source_check": {
+        "expected_feature_type_supported_by_returned_tags": false,
+        "geometry_complete": true,
+        "issues": [
+          "source_geometry_more_than_1000m_from_csv_point",
+          "returned_tags_do_not_support_claimed_feature_type"
+        ],
+        "minimum_distance_to_osm_geometry_vertex_m": 3355155.0,
+        "osm_id": 2167184202,
+        "osm_type": "node",
+        "returned_geometry_bounds": [
+          42.7194571,
+          0.6581245,
+          42.7194571,
+          0.6581245
+        ],
+        "returned_last_edit_utc": "2020-02-17T17:53:42Z",
+        "returned_tags": {},
+        "returned_version": 2,
+        "scope": "Limited current OSM feature/type/geometry comparison; does not verify services, opening hours, ownership, licence or August 2025 operation",
+        "source_url": "https://www.openstreetmap.org/node/2167184202",
+        "status": "source_mismatch"
+      },
+      "supplied_verification_status": "CORRECTED"
+    },
+    {
+      "atoll_code": "AA",
+      "csv_row": 6,
+      "island": "Maalhos",
+      "island_geometry_check": {
+        "distance_from_island_footprint_m": 236.7,
+        "method": "OneMap footprint distance in EPSG:32643; zero means covered by polygon",
+        "onemap_fcode": "LD0004",
+        "onemap_island": "Maalhos"
+      },
+      "issues": [
+        "island_proxy_is_not_a_facility_building_location"
+      ],
+      "name": "AA. Maalhos Health Centre",
+      "source_check": {
+        "expected_feature_type_supported_by_returned_tags": false,
+        "geometry_complete": true,
+        "issues": [
+          "source_geometry_more_than_1000m_from_csv_point",
+          "returned_tags_do_not_support_claimed_feature_type"
+        ],
+        "minimum_distance_to_osm_geometry_vertex_m": 3354038.0,
+        "osm_id": 2167184203,
+        "osm_type": "node",
+        "returned_geometry_bounds": [
+          42.7170646,
+          0.6581245,
+          42.7170646,
+          0.6581245
+        ],
+        "returned_last_edit_utc": "2020-02-17T17:53:42Z",
+        "returned_tags": {},
+        "returned_version": 2,
+        "scope": "Limited current OSM feature/type/geometry comparison; does not verify services, opening hours, ownership, licence or August 2025 operation",
+        "source_url": "https://www.openstreetmap.org/node/2167184203",
+        "status": "source_mismatch"
+      },
+      "supplied_verification_status": "CORRECTED"
+    },
+    {
+      "atoll_code": "AA",
+      "csv_row": 7,
+      "island": "Mathiveri",
+      "island_geometry_check": {
+        "distance_from_island_footprint_m": 0.0,
+        "method": "OneMap footprint distance in EPSG:32643; zero means covered by polygon",
+        "onemap_fcode": "LD0132",
+        "onemap_island": "Mathiveri"
+      },
+      "issues": [
+        "island_proxy_is_not_a_facility_building_location"
+      ],
+      "name": "AA. Mathiveri Health Centre",
+      "source_check": {
+        "expected_feature_type_supported_by_returned_tags": false,
+        "geometry_complete": true,
+        "issues": [
+          "source_geometry_more_than_1000m_from_csv_point",
+          "returned_tags_do_not_support_claimed_feature_type"
+        ],
+        "minimum_distance_to_osm_geometry_vertex_m": 3358049.2,
+        "osm_id": 2167184204,
+        "osm_type": "node",
+        "returned_geometry_bounds": [
+          42.7213508,
+          0.6593422,
+          42.7213508,
+          0.6593422
+        ],
+        "returned_last_edit_utc": "2020-02-17T17:53:42Z",
+        "returned_tags": {},
+        "returned_version": 2,
+        "scope": "Limited current OSM feature/type/geometry comparison; does not verify services, opening hours, ownership, licence or August 2025 operation",
+        "source_url": "https://www.openstreetmap.org/node/2167184204",
+        "status": "source_mismatch"
+      },
+      "supplied_verification_status": "CORRECTED"
+    },
+    {
+      "atoll_code": "AA",
+      "csv_row": 8,
+      "island": "Thoddoo",
+      "island_geometry_check": {
+        "distance_from_island_footprint_m": 0.0,
+        "method": "OneMap footprint distance in EPSG:32643; zero means covered by polygon",
+        "onemap_fcode": "LD0501",
+        "onemap_island": "Thoddoo"
+      },
+      "issues": [
+        "island_proxy_is_not_a_facility_building_location"
+      ],
+      "name": "AA. Thoddoo Health Centre",
+      "source_check": {
+        "expected_feature_type_supported_by_returned_tags": false,
+        "geometry_complete": true,
+        "issues": [
+          "source_geometry_more_than_1000m_from_csv_point",
+          "returned_tags_do_not_support_claimed_feature_type"
+        ],
+        "minimum_distance_to_osm_geometry_vertex_m": 3386197.9,
+        "osm_id": 2167184205,
+        "osm_type": "node",
+        "returned_geometry_bounds": [
+          42.7057233,
+          0.6592321,
+          42.7057233,
+          0.6592321
+        ],
+        "returned_last_edit_utc": "2013-02-22T16:28:56Z",
+        "returned_tags": {},
+        "returned_version": 1,
+        "scope": "Limited current OSM feature/type/geometry comparison; does not verify services, opening hours, ownership, licence or August 2025 operation",
+        "source_url": "https://www.openstreetmap.org/node/2167184205",
+        "status": "source_mismatch"
+      },
+      "supplied_verification_status": "CORRECTED"
+    },
+    {
+      "atoll_code": "AA",
+      "csv_row": 9,
+      "island": "Ukulhas",
+      "island_geometry_check": {
+        "distance_from_island_footprint_m": 0.0,
+        "method": "OneMap footprint distance in EPSG:32643; zero means covered by polygon",
+        "onemap_fcode": "LD0916",
+        "onemap_island": "Ukulhas"
+      },
+      "issues": [
+        "island_proxy_is_not_a_facility_building_location"
+      ],
+      "name": "AA. Ukulhas Health Centre",
+      "source_check": {
+        "expected_feature_type_supported_by_returned_tags": false,
+        "geometry_complete": true,
+        "issues": [
+          "source_geometry_more_than_1000m_from_csv_point",
+          "returned_tags_do_not_support_claimed_feature_type"
+        ],
+        "minimum_distance_to_osm_geometry_vertex_m": 3372032.9,
+        "osm_id": 2167184206,
+        "osm_type": "node",
+        "returned_geometry_bounds": [
+          42.7153394,
+          0.6592714,
+          42.7153394,
+          0.6592714
+        ],
+        "returned_last_edit_utc": "2013-02-22T16:28:56Z",
+        "returned_tags": {},
+        "returned_version": 1,
+        "scope": "Limited current OSM feature/type/geometry comparison; does not verify services, opening hours, ownership, licence or August 2025 operation",
+        "source_url": "https://www.openstreetmap.org/node/2167184206",
+        "status": "source_mismatch"
+      },
+      "supplied_verification_status": "CORRECTED"
+    },
+    {
+      "atoll_code": "AA",
+      "csv_row": 10,
+      "island": "Mathiveri",
+      "island_geometry_check": {
+        "distance_from_island_footprint_m": 0.0,
+        "method": "OneMap footprint distance in EPSG:32643; zero means covered by polygon",
+        "onemap_fcode": "LD0132",
+        "onemap_island": "Mathiveri"
+      },
+      "issues": [
+        "island_proxy_is_not_a_facility_building_location",
+        "source_reuse_terms_not_stated_in_supplied_file"
+      ],
+      "name": "Mathiveri Eesa Clinic",
+      "source_check": {
+        "issues": [
+          "generic_source_url_does_not_verify_a_specific_feature"
+        ],
+        "scope": "No independent facility/service confirmation from this generic URL",
+        "source_url": "https://hems.health.gov.mv/establishments",
+        "status": "no_direct_osm_feature"
+      },
+      "supplied_verification_status": "UNVERIFIED"
+    },
+    {
+      "atoll_code": "ADh",
+      "csv_row": 11,
+      "island": "Mahibadhoo",
+      "island_geometry_check": {
+        "distance_from_island_footprint_m": 0.0,
+        "method": "OneMap footprint distance in EPSG:32643; zero means covered by polygon",
+        "onemap_fcode": "LD0545",
+        "onemap_island": "Mahibadhoo"
+      },
+      "issues": [
+        "island_proxy_is_not_a_facility_building_location"
+      ],
+      "name": "Alifu Dhaalu Atoll Hospital",
+      "source_check": {
+        "expected_feature_type_supported_by_returned_tags": false,
+        "geometry_complete": true,
+        "issues": [
+          "source_geometry_more_than_1000m_from_csv_point",
+          "returned_tags_do_not_support_claimed_feature_type"
+        ],
+        "minimum_distance_to_osm_geometry_vertex_m": 3377931.8,
+        "osm_id": 2167184207,
+        "osm_type": "node",
+        "returned_geometry_bounds": [
+          42.7217585,
+          0.6599215,
+          42.7217585,
+          0.6599215
+        ],
+        "returned_last_edit_utc": "2020-02-17T17:53:42Z",
+        "returned_tags": {},
+        "returned_version": 2,
+        "scope": "Limited current OSM feature/type/geometry comparison; does not verify services, opening hours, ownership, licence or August 2025 operation",
+        "source_url": "https://www.openstreetmap.org/node/2167184207",
+        "status": "source_mismatch"
+      },
+      "supplied_verification_status": "CORRECTED"
+    },
+    {
+      "atoll_code": "ADh",
+      "csv_row": 12,
+      "island": "Dhidhdhoo",
+      "island_geometry_check": {
+        "distance_from_island_footprint_m": 423.7,
+        "method": "OneMap footprint distance in EPSG:32643; zero means covered by polygon",
+        "onemap_fcode": "LD0459",
+        "onemap_island": "Dhidhdhoo"
+      },
+      "issues": [
+        "island_proxy_is_not_a_facility_building_location"
+      ],
+      "name": "ADh. Dhidhdhoo Health Centre",
+      "source_check": {
+        "expected_feature_type_supported_by_returned_tags": false,
+        "geometry_complete": true,
+        "issues": [
+          "source_geometry_more_than_1000m_from_csv_point",
+          "returned_tags_do_not_support_claimed_feature_type"
+        ],
+        "minimum_distance_to_osm_geometry_vertex_m": 3366915.6,
+        "osm_id": 2167184208,
+        "osm_type": "node",
+        "returned_geometry_bounds": [
+          42.714005,
+          0.6603311,
+          42.714005,
+          0.6603311
+        ],
+        "returned_last_edit_utc": "2013-02-22T16:28:56Z",
+        "returned_tags": {},
+        "returned_version": 1,
+        "scope": "Limited current OSM feature/type/geometry comparison; does not verify services, opening hours, ownership, licence or August 2025 operation",
+        "source_url": "https://www.openstreetmap.org/node/2167184208",
+        "status": "source_mismatch"
+      },
+      "supplied_verification_status": "CORRECTED"
+    },
+    {
+      "atoll_code": "ADh",
+      "csv_row": 13,
+      "island": "Dhigurah",
+      "island_geometry_check": {
+        "distance_from_island_footprint_m": 0.0,
+        "method": "OneMap footprint distance in EPSG:32643; zero means covered by polygon",
+        "onemap_fcode": "LD1047",
+        "onemap_island": "Dhigurah"
+      },
+      "issues": [
+        "island_proxy_is_not_a_facility_building_location"
+      ],
+      "name": "ADh. Dhigurah Health Centre",
+      "source_check": {
+        "expected_feature_type_supported_by_returned_tags": false,
+        "geometry_complete": true,
+        "issues": [
+          "source_geometry_more_than_1000m_from_csv_point",
+          "returned_tags_do_not_support_claimed_feature_type"
+        ],
+        "minimum_distance_to_osm_geometry_vertex_m": 3372950.9,
+        "osm_id": 2167184209,
+        "osm_type": "node",
+        "returned_geometry_bounds": [
+          42.706899,
+          0.6604954,
+          42.706899,
+          0.6604954
+        ],
+        "returned_last_edit_utc": "2020-02-17T17:53:42Z",
+        "returned_tags": {},
+        "returned_version": 2,
+        "scope": "Limited current OSM feature/type/geometry comparison; does not verify services, opening hours, ownership, licence or August 2025 operation",
+        "source_url": "https://www.openstreetmap.org/node/2167184209",
+        "status": "source_mismatch"
+      },
+      "supplied_verification_status": "CORRECTED"
+    },
+    {
+      "atoll_code": "ADh",
+      "csv_row": 14,
+      "island": "Fenfushi",
+      "island_geometry_check": {
+        "distance_from_island_footprint_m": 36.5,
+        "method": "OneMap footprint distance in EPSG:32643; zero means covered by polygon",
+        "onemap_fcode": "LD0513",
+        "onemap_island": "Fenfushi"
+      },
+      "issues": [
+        "island_proxy_is_not_a_facility_building_location"
+      ],
+      "name": "ADh. Fenfushi Health Centre",
+      "source_check": {
+        "expected_feature_type_supported_by_returned_tags": false,
+        "geometry_complete": true,
+        "issues": [
+          "source_geometry_more_than_1000m_from_csv_point",
+          "returned_tags_do_not_support_claimed_feature_type"
+        ],
+        "minimum_distance_to_osm_geometry_vertex_m": 3356037.1,
+        "osm_id": 2167184210,
+        "osm_type": "node",
+        "returned_geometry_bounds": [
+          42.7126121,
+          0.6610748,
+          42.7126121,
+          0.6610748
+        ],
+        "returned_last_edit_utc": "2020-02-17T17:53:42Z",
+        "returned_tags": {},
+        "returned_version": 2,
+        "scope": "Limited current OSM feature/type/geometry comparison; does not verify services, opening hours, ownership, licence or August 2025 operation",
+        "source_url": "https://www.openstreetmap.org/node/2167184210",
+        "status": "source_mismatch"
+      },
+      "supplied_verification_status": "CORRECTED"
+    },
+    {
+      "atoll_code": "ADh",
+      "csv_row": 15,
+      "island": "Hangnaameedhoo",
+      "island_geometry_check": {
+        "distance_from_island_footprint_m": 14917.8,
+        "method": "OneMap footprint distance in EPSG:32643; zero means covered by polygon",
+        "onemap_fcode": "LD1023",
+        "onemap_island": "Hangnaameedhoo"
+      },
+      "issues": [
+        "island_proxy_is_not_a_facility_building_location",
+        "csv_point_more_than_1000m_outside_named_island_footprint"
+      ],
+      "name": "ADh. Hangnaameedhoo Health Centre",
+      "source_check": {
+        "expected_feature_type_supported_by_returned_tags": false,
+        "geometry_complete": true,
+        "issues": [
+          "source_geometry_more_than_1000m_from_csv_point",
+          "returned_tags_do_not_support_claimed_feature_type"
+        ],
+        "minimum_distance_to_osm_geometry_vertex_m": 3380107.1,
+        "osm_id": 2167184211,
+        "osm_type": "node",
+        "returned_geometry_bounds": [
+          42.7092755,
+          0.6614073,
+          42.7092755,
+          0.6614073
+        ],
+        "returned_last_edit_utc": "2020-02-17T17:53:42Z",
+        "returned_tags": {},
+        "returned_version": 2,
+        "scope": "Limited current OSM feature/type/geometry comparison; does not verify services, opening hours, ownership, licence or August 2025 operation",
+        "source_url": "https://www.openstreetmap.org/node/2167184211",
+        "status": "source_mismatch"
+      },
+      "supplied_verification_status": "CORRECTED"
+    },
+    {
+      "atoll_code": "ADh",
+      "csv_row": 16,
+      "island": "Kunburudhoo",
+      "island_geometry_check": {
+        "distance_from_island_footprint_m": 6135.7,
+        "method": "OneMap footprint distance in EPSG:32643; zero means covered by polygon",
+        "onemap_fcode": "LD0771",
+        "onemap_island": "Kun'burudhoo"
+      },
+      "issues": [
+        "island_proxy_is_not_a_facility_building_location",
+        "csv_point_more_than_1000m_outside_named_island_footprint"
+      ],
+      "name": "ADh. Kunburudhoo Health Centre",
+      "source_check": {
+        "expected_feature_type_supported_by_returned_tags": false,
+        "geometry_complete": true,
+        "issues": [
+          "source_geometry_more_than_1000m_from_csv_point",
+          "returned_tags_do_not_support_claimed_feature_type"
+        ],
+        "minimum_distance_to_osm_geometry_vertex_m": 3379601.7,
+        "osm_id": 2167184212,
+        "osm_type": "node",
+        "returned_geometry_bounds": [
+          42.7222466,
+          0.6615361,
+          42.7222466,
+          0.6615361
+        ],
+        "returned_last_edit_utc": "2020-02-17T17:53:42Z",
+        "returned_tags": {},
+        "returned_version": 2,
+        "scope": "Limited current OSM feature/type/geometry comparison; does not verify services, opening hours, ownership, licence or August 2025 operation",
+        "source_url": "https://www.openstreetmap.org/node/2167184212",
+        "status": "source_mismatch"
+      },
+      "supplied_verification_status": "CORRECTED"
+    },
+    {
+      "atoll_code": "ADh",
+      "csv_row": 17,
+      "island": "Maamigili",
+      "island_geometry_check": {
+        "distance_from_island_footprint_m": 0.0,
+        "method": "OneMap footprint distance in EPSG:32643; zero means covered by polygon",
+        "onemap_fcode": "LD0158",
+        "onemap_island": "Maamigili"
+      },
+      "issues": [
+        "island_proxy_is_not_a_facility_building_location"
+      ],
+      "name": "ADh. Maamigili Health Centre",
+      "source_check": {
+        "expected_feature_type_supported_by_returned_tags": false,
+        "geometry_complete": true,
+        "issues": [
+          "source_geometry_more_than_1000m_from_csv_point",
+          "returned_tags_do_not_support_claimed_feature_type"
+        ],
+        "minimum_distance_to_osm_geometry_vertex_m": 3361815.1,
+        "osm_id": 2167184213,
+        "osm_type": "node",
+        "returned_geometry_bounds": [
+          42.7111745,
+          0.6615253,
+          42.7111745,
+          0.6615253
+        ],
+        "returned_last_edit_utc": "2020-02-17T17:53:42Z",
+        "returned_tags": {},
+        "returned_version": 2,
+        "scope": "Limited current OSM feature/type/geometry comparison; does not verify services, opening hours, ownership, licence or August 2025 operation",
+        "source_url": "https://www.openstreetmap.org/node/2167184213",
+        "status": "source_mismatch"
+      },
+      "supplied_verification_status": "CORRECTED"
+    },
+    {
+      "atoll_code": "ADh",
+      "csv_row": 18,
+      "island": "Mandhoo",
+      "island_geometry_check": {
+        "distance_from_island_footprint_m": 178.0,
+        "method": "OneMap footprint distance in EPSG:32643; zero means covered by polygon",
+        "onemap_fcode": "LD0168",
+        "onemap_island": "Mandhoo"
+      },
+      "issues": [
+        "island_proxy_is_not_a_facility_building_location"
+      ],
+      "name": "ADh. Mandhoo Health Centre",
+      "source_check": {
+        "expected_feature_type_supported_by_returned_tags": false,
+        "geometry_complete": true,
+        "issues": [
+          "source_geometry_more_than_1000m_from_csv_point",
+          "returned_tags_do_not_support_claimed_feature_type"
+        ],
+        "minimum_distance_to_osm_geometry_vertex_m": 3348842.0,
+        "osm_id": 2167184214,
+        "osm_type": "node",
+        "returned_geometry_bounds": [
+          42.7219922,
+          0.6627447,
+          42.7219922,
+          0.6627447
+        ],
+        "returned_last_edit_utc": "2013-02-22T16:28:56Z",
+        "returned_tags": {},
+        "returned_version": 1,
+        "scope": "Limited current OSM feature/type/geometry comparison; does not verify services, opening hours, ownership, licence or August 2025 operation",
+        "source_url": "https://www.openstreetmap.org/node/2167184214",
+        "status": "source_mismatch"
+      },
+      "supplied_verification_status": "CORRECTED"
+    },
+    {
+      "atoll_code": "ADh",
+      "csv_row": 19,
+      "island": "Omadhoo",
+      "island_geometry_check": {
+        "distance_from_island_footprint_m": 3379.5,
+        "method": "OneMap footprint distance in EPSG:32643; zero means covered by polygon",
+        "onemap_fcode": "LD0009",
+        "onemap_island": "Omadhoo"
+      },
+      "issues": [
+        "island_proxy_is_not_a_facility_building_location",
+        "csv_point_more_than_1000m_outside_named_island_footprint"
+      ],
+      "name": "ADh. Omadhoo Health Centre",
+      "source_check": {
+        "expected_feature_type_supported_by_returned_tags": false,
+        "geometry_complete": true,
+        "issues": [
+          "source_geometry_more_than_1000m_from_csv_point",
+          "returned_tags_do_not_support_claimed_feature_type"
+        ],
+        "minimum_distance_to_osm_geometry_vertex_m": 3373618.1,
+        "osm_id": 2167184215,
+        "osm_type": "node",
+        "returned_geometry_bounds": [
+          42.7211899,
+          0.6643468,
+          42.7211899,
+          0.6643468
+        ],
+        "returned_last_edit_utc": "2020-02-17T17:53:42Z",
+        "returned_tags": {},
+        "returned_version": 2,
+        "scope": "Limited current OSM feature/type/geometry comparison; does not verify services, opening hours, ownership, licence or August 2025 operation",
+        "source_url": "https://www.openstreetmap.org/node/2167184215",
+        "status": "source_mismatch"
+      },
+      "supplied_verification_status": "CORRECTED"
+    },
+    {
+      "atoll_code": "ADh",
+      "csv_row": 20,
+      "island": "Dhangethi",
+      "island_geometry_check": {
+        "distance_from_island_footprint_m": 0.0,
+        "method": "OneMap footprint distance in EPSG:32643; zero means covered by polygon",
+        "onemap_fcode": "LD0273",
+        "onemap_island": "Dhan'gethi"
+      },
+      "issues": [
+        "island_proxy_is_not_a_facility_building_location"
+      ],
+      "name": "A.Dh. Dhangethi Health Centre",
+      "source_check": {
+        "expected_feature_type_supported_by_returned_tags": false,
+        "geometry_complete": true,
+        "issues": [
+          "source_geometry_more_than_1000m_from_csv_point",
+          "returned_tags_do_not_support_claimed_feature_type"
+        ],
+        "minimum_distance_to_osm_geometry_vertex_m": 3375204.6,
+        "osm_id": 2167184216,
+        "osm_type": "node",
+        "returned_geometry_bounds": [
+          42.719602,
+          0.6661545,
+          42.719602,
+          0.6661545
+        ],
+        "returned_last_edit_utc": "2020-02-17T17:53:42Z",
+        "returned_tags": {},
+        "returned_version": 2,
+        "scope": "Limited current OSM feature/type/geometry comparison; does not verify services, opening hours, ownership, licence or August 2025 operation",
+        "source_url": "https://www.openstreetmap.org/node/2167184216",
+        "status": "source_mismatch"
+      },
+      "supplied_verification_status": "CORRECTED"
+    },
+    {
+      "atoll_code": "ADh",
+      "csv_row": 21,
+      "island": "Maamigili",
+      "island_geometry_check": {
+        "distance_from_island_footprint_m": 0.0,
+        "method": "OneMap footprint distance in EPSG:32643; zero means covered by polygon",
+        "onemap_fcode": "LD0158",
+        "onemap_island": "Maamigili"
+      },
+      "issues": [
+        "island_proxy_is_not_a_facility_building_location",
+        "source_reuse_terms_not_stated_in_supplied_file"
+      ],
+      "name": "Maamigili Clinic",
+      "source_check": {
+        "issues": [
+          "generic_source_url_does_not_verify_a_specific_feature"
+        ],
+        "scope": "No independent facility/service confirmation from this generic URL",
+        "source_url": "https://hems.health.gov.mv/establishments",
+        "status": "no_direct_osm_feature"
+      },
+      "supplied_verification_status": "UNVERIFIED"
+    },
+    {
+      "atoll_code": "K",
+      "csv_row": 22,
+      "island": "Kaashidhoo",
+      "island_geometry_check": {
+        "distance_from_island_footprint_m": 0.0,
+        "method": "OneMap footprint distance in EPSG:32643; zero means covered by polygon",
+        "onemap_fcode": "LD0665",
+        "onemap_island": "Kaashidhoo"
+      },
+      "issues": [
+        "island_proxy_is_not_a_facility_building_location"
+      ],
+      "name": "K. Kaashidhoo Health Centre",
+      "source_check": {
+        "expected_feature_type_supported_by_returned_tags": false,
+        "geometry_complete": true,
+        "issues": [
+          "source_geometry_more_than_1000m_from_csv_point",
+          "returned_tags_do_not_support_claimed_feature_type"
+        ],
+        "minimum_distance_to_osm_geometry_vertex_m": 3447134.5,
+        "osm_id": 2167184217,
+        "osm_type": "node",
+        "returned_geometry_bounds": [
+          42.7158791,
+          0.669153,
+          42.7158791,
+          0.669153
+        ],
+        "returned_last_edit_utc": "2020-02-17T17:53:42Z",
+        "returned_tags": {},
+        "returned_version": 2,
+        "scope": "Limited current OSM feature/type/geometry comparison; does not verify services, opening hours, ownership, licence or August 2025 operation",
+        "source_url": "https://www.openstreetmap.org/node/2167184217",
+        "status": "source_mismatch"
+      },
+      "supplied_verification_status": "CORRECTED"
+    },
+    {
+      "atoll_code": "K",
+      "csv_row": 23,
+      "island": "Gaafaru",
+      "island_geometry_check": {
+        "distance_from_island_footprint_m": 55.9,
+        "method": "OneMap footprint distance in EPSG:32643; zero means covered by polygon",
+        "onemap_fcode": "LD0873",
+        "onemap_island": "Gaafaru"
+      },
+      "issues": [
+        "island_proxy_is_not_a_facility_building_location"
+      ],
+      "name": "K. Gaafaru Health Centre",
+      "source_check": {
+        "expected_feature_type_supported_by_returned_tags": false,
+        "geometry_complete": true,
+        "issues": [
+          "source_geometry_more_than_1000m_from_csv_point",
+          "returned_tags_do_not_support_claimed_feature_type"
+        ],
+        "minimum_distance_to_osm_geometry_vertex_m": 3448342.0,
+        "osm_id": 2167184218,
+        "osm_type": "node",
+        "returned_geometry_bounds": [
+          42.7139853,
+          0.670967,
+          42.7139853,
+          0.670967
+        ],
+        "returned_last_edit_utc": "2013-02-22T16:28:56Z",
+        "returned_tags": {},
+        "returned_version": 1,
+        "scope": "Limited current OSM feature/type/geometry comparison; does not verify services, opening hours, ownership, licence or August 2025 operation",
+        "source_url": "https://www.openstreetmap.org/node/2167184218",
+        "status": "source_mismatch"
+      },
+      "supplied_verification_status": "CORRECTED"
+    },
+    {
+      "atoll_code": "K",
+      "csv_row": 24,
+      "island": "Dhiffushi",
+      "island_geometry_check": {
+        "distance_from_island_footprint_m": 0.0,
+        "method": "OneMap footprint distance in EPSG:32643; zero means covered by polygon",
+        "onemap_fcode": "LD0894",
+        "onemap_island": "Dhiffushi"
+      },
+      "issues": [
+        "island_proxy_is_not_a_facility_building_location"
+      ],
+      "name": "K. Dhiffushi Health Centre",
+      "source_check": {
+        "expected_feature_type_supported_by_returned_tags": false,
+        "geometry_complete": true,
+        "issues": [
+          "source_geometry_more_than_1000m_from_csv_point",
+          "returned_tags_do_not_support_claimed_feature_type"
+        ],
+        "minimum_distance_to_osm_geometry_vertex_m": 3468456.6,
+        "osm_id": 2167184219,
+        "osm_type": "node",
+        "returned_geometry_bounds": [
+          42.7123172,
+          0.6730667,
+          42.7123172,
+          0.6730667
+        ],
+        "returned_last_edit_utc": "2013-02-22T16:28:56Z",
+        "returned_tags": {},
+        "returned_version": 1,
+        "scope": "Limited current OSM feature/type/geometry comparison; does not verify services, opening hours, ownership, licence or August 2025 operation",
+        "source_url": "https://www.openstreetmap.org/node/2167184219",
+        "status": "source_mismatch"
+      },
+      "supplied_verification_status": "CORRECTED"
+    },
+    {
+      "atoll_code": "K",
+      "csv_row": 25,
+      "island": "Thulusdhoo",
+      "island_geometry_check": {
+        "distance_from_island_footprint_m": 0.0,
+        "method": "OneMap footprint distance in EPSG:32643; zero means covered by polygon",
+        "onemap_fcode": "LD0745",
+        "onemap_island": "Thulusdhoo"
+      },
+      "issues": [
+        "island_proxy_is_not_a_facility_building_location"
+      ],
+      "name": "K. Thulusdhoo Health Centre",
+      "source_check": {
+        "expected_feature_type_supported_by_returned_tags": false,
+        "geometry_complete": true,
+        "issues": [
+          "source_geometry_more_than_1000m_from_csv_point",
+          "returned_tags_do_not_support_claimed_feature_type"
+        ],
+        "minimum_distance_to_osm_geometry_vertex_m": 3460902.6,
+        "osm_id": 2167184220,
+        "osm_type": "node",
+        "returned_geometry_bounds": [
+          42.7102572,
+          0.6760941,
+          42.7102572,
+          0.6760941
+        ],
+        "returned_last_edit_utc": "2020-02-17T17:53:42Z",
+        "returned_tags": {},
+        "returned_version": 2,
+        "scope": "Limited current OSM feature/type/geometry comparison; does not verify services, opening hours, ownership, licence or August 2025 operation",
+        "source_url": "https://www.openstreetmap.org/node/2167184220",
+        "status": "source_mismatch"
+      },
+      "supplied_verification_status": "CORRECTED"
+    },
+    {
+      "atoll_code": "K",
+      "csv_row": 26,
+      "island": "Huraa",
+      "island_geometry_check": {
+        "distance_from_island_footprint_m": 0.0,
+        "method": "OneMap footprint distance in EPSG:32643; zero means covered by polygon",
+        "onemap_fcode": "LD0683",
+        "onemap_island": "Huraa"
+      },
+      "issues": [
+        "island_proxy_is_not_a_facility_building_location"
+      ],
+      "name": "K. Huraa Health Centre",
+      "source_check": {
+        "expected_feature_type_supported_by_returned_tags": false,
+        "geometry_complete": true,
+        "issues": [
+          "source_geometry_more_than_1000m_from_csv_point",
+          "returned_tags_do_not_support_claimed_feature_type"
+        ],
+        "minimum_distance_to_osm_geometry_vertex_m": 3455007.8,
+        "osm_id": 2167184221,
+        "osm_type": "node",
+        "returned_geometry_bounds": [
+          42.7091184,
+          0.6791695,
+          42.7091184,
+          0.6791695
+        ],
+        "returned_last_edit_utc": "2013-02-22T16:28:56Z",
+        "returned_tags": {},
+        "returned_version": 1,
+        "scope": "Limited current OSM feature/type/geometry comparison; does not verify services, opening hours, ownership, licence or August 2025 operation",
+        "source_url": "https://www.openstreetmap.org/node/2167184221",
+        "status": "source_mismatch"
+      },
+      "supplied_verification_status": "CORRECTED"
+    },
+    {
+      "atoll_code": "K",
+      "csv_row": 27,
+      "island": "Himmafushi",
+      "island_geometry_check": {
+        "distance_from_island_footprint_m": 0.0,
+        "method": "OneMap footprint distance in EPSG:32643; zero means covered by polygon",
+        "onemap_fcode": "LD1129",
+        "onemap_island": "Hinmafushi"
+      },
+      "issues": [
+        "island_proxy_is_not_a_facility_building_location"
+      ],
+      "name": "K. Himmafushi Health Centre",
+      "source_check": {
+        "expected_feature_type_supported_by_returned_tags": false,
+        "geometry_complete": true,
+        "issues": [
+          "source_geometry_more_than_1000m_from_csv_point",
+          "returned_tags_do_not_support_claimed_feature_type"
+        ],
+        "minimum_distance_to_osm_geometry_vertex_m": 3451554.8,
+        "osm_id": 2167184222,
+        "osm_type": "node",
+        "returned_geometry_bounds": [
+          42.7086908,
+          0.6815654,
+          42.7086908,
+          0.6815654
+        ],
+        "returned_last_edit_utc": "2020-02-17T17:53:42Z",
+        "returned_tags": {},
+        "returned_version": 2,
+        "scope": "Limited current OSM feature/type/geometry comparison; does not verify services, opening hours, ownership, licence or August 2025 operation",
+        "source_url": "https://www.openstreetmap.org/node/2167184222",
+        "status": "source_mismatch"
+      },
+      "supplied_verification_status": "CORRECTED"
+    },
+    {
+      "atoll_code": "K",
+      "csv_row": 28,
+      "island": "Gulhi",
+      "island_geometry_check": {
+        "distance_from_island_footprint_m": 0.0,
+        "method": "OneMap footprint distance in EPSG:32643; zero means covered by polygon",
+        "onemap_fcode": "LD0577",
+        "onemap_island": "Gulhi"
+      },
+      "issues": [
+        "island_proxy_is_not_a_facility_building_location"
+      ],
+      "name": "K. Gulhi Health Centre",
+      "source_check": {
+        "expected_feature_type_supported_by_returned_tags": false,
+        "geometry_complete": true,
+        "issues": [
+          "source_geometry_more_than_1000m_from_csv_point",
+          "returned_tags_do_not_support_claimed_feature_type"
+        ],
+        "minimum_distance_to_osm_geometry_vertex_m": 3441125.5,
+        "osm_id": 2167184223,
+        "osm_type": "node",
+        "returned_geometry_bounds": [
+          42.7080792,
+          0.6831907,
+          42.7080792,
+          0.6831907
+        ],
+        "returned_last_edit_utc": "2020-02-17T17:53:42Z",
+        "returned_tags": {},
+        "returned_version": 2,
+        "scope": "Limited current OSM feature/type/geometry comparison; does not verify services, opening hours, ownership, licence or August 2025 operation",
+        "source_url": "https://www.openstreetmap.org/node/2167184223",
+        "status": "source_mismatch"
+      },
+      "supplied_verification_status": "CORRECTED"
+    },
+    {
+      "atoll_code": "K",
+      "csv_row": 29,
+      "island": "Maafushi",
+      "island_geometry_check": {
+        "distance_from_island_footprint_m": 0.0,
+        "method": "OneMap footprint distance in EPSG:32643; zero means covered by polygon",
+        "onemap_fcode": "LD0069",
+        "onemap_island": "Maafushi"
+      },
+      "issues": [
+        "island_proxy_is_not_a_facility_building_location"
+      ],
+      "name": "Kaafu Maafushi Health Centre",
+      "source_check": {
+        "expected_feature_type_supported_by_returned_tags": false,
+        "geometry_complete": true,
+        "issues": [
+          "source_geometry_more_than_1000m_from_csv_point",
+          "returned_tags_do_not_support_claimed_feature_type"
+        ],
+        "minimum_distance_to_osm_geometry_vertex_m": 3438668.8,
+        "osm_id": 2167184224,
+        "osm_type": "node",
+        "returned_geometry_bounds": [
+          42.7070385,
+          0.6850091,
+          42.7070385,
+          0.6850091
+        ],
+        "returned_last_edit_utc": "2020-02-17T17:53:42Z",
+        "returned_tags": {},
+        "returned_version": 2,
+        "scope": "Limited current OSM feature/type/geometry comparison; does not verify services, opening hours, ownership, licence or August 2025 operation",
+        "source_url": "https://www.openstreetmap.org/node/2167184224",
+        "status": "source_mismatch"
+      },
+      "supplied_verification_status": "CORRECTED"
+    },
+    {
+      "atoll_code": "K",
+      "csv_row": 30,
+      "island": "Guraidhoo",
+      "island_geometry_check": {
+        "distance_from_island_footprint_m": 0.0,
+        "method": "OneMap footprint distance in EPSG:32643; zero means covered by polygon",
+        "onemap_fcode": "LD0738",
+        "onemap_island": "Guraidhoo"
+      },
+      "issues": [
+        "island_proxy_is_not_a_facility_building_location"
+      ],
+      "name": "K. Guraidhoo Health Centre",
+      "source_check": {
+        "expected_feature_type_supported_by_returned_tags": false,
+        "geometry_complete": true,
+        "issues": [
+          "source_geometry_more_than_1000m_from_csv_point",
+          "returned_tags_do_not_support_claimed_feature_type"
+        ],
+        "minimum_distance_to_osm_geometry_vertex_m": 3436017.5,
+        "osm_id": 2167184225,
+        "osm_type": "node",
+        "returned_geometry_bounds": [
+          42.7041954,
+          0.6865379,
+          42.7041954,
+          0.6865379
+        ],
+        "returned_last_edit_utc": "2020-02-17T17:53:42Z",
+        "returned_tags": {},
+        "returned_version": 2,
+        "scope": "Limited current OSM feature/type/geometry comparison; does not verify services, opening hours, ownership, licence or August 2025 operation",
+        "source_url": "https://www.openstreetmap.org/node/2167184225",
+        "status": "source_mismatch"
+      },
+      "supplied_verification_status": "CORRECTED"
+    },
+    {
+      "atoll_code": "V",
+      "csv_row": 31,
+      "island": "Felidhoo",
+      "island_geometry_check": {
+        "distance_from_island_footprint_m": 0.0,
+        "method": "OneMap footprint distance in EPSG:32643; zero means covered by polygon",
+        "onemap_fcode": "LD0075",
+        "onemap_island": "Felidhoo"
+      },
+      "issues": [
+        "island_proxy_is_not_a_facility_building_location"
+      ],
+      "name": "Vaavu Atoll Hospital",
+      "source_check": {
+        "expected_feature_type_supported_by_returned_tags": false,
+        "geometry_complete": true,
+        "issues": [
+          "source_geometry_more_than_1000m_from_csv_point",
+          "returned_tags_do_not_support_claimed_feature_type"
+        ],
+        "minimum_distance_to_osm_geometry_vertex_m": 3441303.4,
+        "osm_id": 2167184226,
+        "osm_type": "node",
+        "returned_geometry_bounds": [
+          42.7014273,
+          0.6870528,
+          42.7014273,
+          0.6870528
+        ],
+        "returned_last_edit_utc": "2020-02-17T17:53:42Z",
+        "returned_tags": {},
+        "returned_version": 2,
+        "scope": "Limited current OSM feature/type/geometry comparison; does not verify services, opening hours, ownership, licence or August 2025 operation",
+        "source_url": "https://www.openstreetmap.org/node/2167184226",
+        "status": "source_mismatch"
+      },
+      "supplied_verification_status": "CORRECTED"
+    },
+    {
+      "atoll_code": "V",
+      "csv_row": 32,
+      "island": "Fulidhoo",
+      "island_geometry_check": {
+        "distance_from_island_footprint_m": 12414.4,
+        "method": "OneMap footprint distance in EPSG:32643; zero means covered by polygon",
+        "onemap_fcode": "LD0182",
+        "onemap_island": "Fulidhoo"
+      },
+      "issues": [
+        "island_proxy_is_not_a_facility_building_location",
+        "csv_point_more_than_1000m_outside_named_island_footprint"
+      ],
+      "name": "V. Fulidhoo Health Centre",
+      "source_check": {
+        "expected_feature_type_supported_by_returned_tags": false,
+        "geometry_complete": true,
+        "issues": [
+          "source_geometry_more_than_1000m_from_csv_point",
+          "returned_tags_do_not_support_claimed_feature_type"
+        ],
+        "minimum_distance_to_osm_geometry_vertex_m": 3441435.8,
+        "osm_id": 2167184227,
+        "osm_type": "node",
+        "returned_geometry_bounds": [
+          42.6996732,
+          0.6872674,
+          42.6996732,
+          0.6872674
+        ],
+        "returned_last_edit_utc": "2020-02-17T17:53:42Z",
+        "returned_tags": {},
+        "returned_version": 2,
+        "scope": "Limited current OSM feature/type/geometry comparison; does not verify services, opening hours, ownership, licence or August 2025 operation",
+        "source_url": "https://www.openstreetmap.org/node/2167184227",
+        "status": "source_mismatch"
+      },
+      "supplied_verification_status": "CORRECTED"
+    },
+    {
+      "atoll_code": "V",
+      "csv_row": 33,
+      "island": "Keyodhoo",
+      "island_geometry_check": {
+        "distance_from_island_footprint_m": 0.0,
+        "method": "OneMap footprint distance in EPSG:32643; zero means covered by polygon",
+        "onemap_fcode": "LD0260",
+        "onemap_island": "Keyodhoo"
+      },
+      "issues": [
+        "island_proxy_is_not_a_facility_building_location"
+      ],
+      "name": "V. Keyodhoo Health Centre",
+      "source_check": {
+        "expected_feature_type_supported_by_returned_tags": false,
+        "geometry_complete": true,
+        "issues": [
+          "source_geometry_more_than_1000m_from_csv_point",
+          "returned_tags_do_not_support_claimed_feature_type"
+        ],
+        "minimum_distance_to_osm_geometry_vertex_m": 3441888.0,
+        "osm_id": 2167184228,
+        "osm_type": "node",
+        "returned_geometry_bounds": [
+          42.6982731,
+          0.6879862,
+          42.6982731,
+          0.6879862
+        ],
+        "returned_last_edit_utc": "2020-02-17T17:53:42Z",
+        "returned_tags": {},
+        "returned_version": 2,
+        "scope": "Limited current OSM feature/type/geometry comparison; does not verify services, opening hours, ownership, licence or August 2025 operation",
+        "source_url": "https://www.openstreetmap.org/node/2167184228",
+        "status": "source_mismatch"
+      },
+      "supplied_verification_status": "CORRECTED"
+    },
+    {
+      "atoll_code": "V",
+      "csv_row": 34,
+      "island": "Rakeedhoo",
+      "island_geometry_check": {
+        "distance_from_island_footprint_m": 660.5,
+        "method": "OneMap footprint distance in EPSG:32643; zero means covered by polygon",
+        "onemap_fcode": "LD0420",
+        "onemap_island": "Rakeedhoo"
+      },
+      "issues": [
+        "island_proxy_is_not_a_facility_building_location"
+      ],
+      "name": "V. Rakeedhoo Health Centre",
+      "source_check": {
+        "expected_feature_type_supported_by_returned_tags": false,
+        "geometry_complete": true,
+        "issues": [
+          "source_geometry_more_than_1000m_from_csv_point",
+          "returned_tags_do_not_support_claimed_feature_type"
+        ],
+        "minimum_distance_to_osm_geometry_vertex_m": 3432043.5,
+        "osm_id": 2167184229,
+        "osm_type": "node",
+        "returned_geometry_bounds": [
+          42.6978332,
+          0.689472,
+          42.6978332,
+          0.689472
+        ],
+        "returned_last_edit_utc": "2020-02-17T17:53:42Z",
+        "returned_tags": {},
+        "returned_version": 2,
+        "scope": "Limited current OSM feature/type/geometry comparison; does not verify services, opening hours, ownership, licence or August 2025 operation",
+        "source_url": "https://www.openstreetmap.org/node/2167184229",
+        "status": "source_mismatch"
+      },
+      "supplied_verification_status": "CORRECTED"
+    },
+    {
+      "atoll_code": "V",
+      "csv_row": 35,
+      "island": "Thinadhoo",
+      "island_geometry_check": {
+        "distance_from_island_footprint_m": 73.7,
+        "method": "OneMap footprint distance in EPSG:32643; zero means covered by polygon",
+        "onemap_fcode": "LD1079",
+        "onemap_island": "Thinadhoo"
+      },
+      "issues": [
+        "island_proxy_is_not_a_facility_building_location"
+      ],
+      "name": "V. Thinadhoo Health Centre",
+      "source_check": {
+        "expected_feature_type_supported_by_returned_tags": false,
+        "geometry_complete": true,
+        "issues": [
+          "source_geometry_more_than_1000m_from_csv_point",
+          "returned_tags_do_not_support_claimed_feature_type"
+        ],
+        "minimum_distance_to_osm_geometry_vertex_m": 3440686.6,
+        "osm_id": 2167184230,
+        "osm_type": "node",
+        "returned_geometry_bounds": [
+          42.6978761,
+          0.691269,
+          42.6978761,
+          0.691269
+        ],
+        "returned_last_edit_utc": "2020-02-17T17:53:42Z",
+        "returned_tags": {},
+        "returned_version": 2,
+        "scope": "Limited current OSM feature/type/geometry comparison; does not verify services, opening hours, ownership, licence or August 2025 operation",
+        "source_url": "https://www.openstreetmap.org/node/2167184230",
+        "status": "source_mismatch"
+      },
+      "supplied_verification_status": "CORRECTED"
+    },
+    {
+      "atoll_code": "Male City",
+      "csv_row": 36,
+      "island": "Male",
+      "island_geometry_check": {
+        "distance_from_island_footprint_m": 0.0,
+        "method": "OneMap footprint distance in EPSG:32643; zero means covered by polygon",
+        "onemap_fcode": "LD0442",
+        "onemap_island": "Malé"
+      },
+      "issues": [],
+      "name": "Indira Gandhi Memorial Hospital (IGMH)",
+      "source_check": {
+        "expected_feature_type_supported_by_returned_tags": true,
+        "geometry_complete": true,
+        "issues": [],
+        "minimum_distance_to_osm_geometry_vertex_m": 29.7,
+        "osm_id": 151403710,
+        "osm_type": "way",
+        "returned_geometry_bounds": [
+          73.500902,
+          4.1729297,
+          73.5023134,
+          4.1737729
+        ],
+        "returned_last_edit_utc": "2026-08-16T16:09:48Z",
+        "returned_tags": {
+          "amenity": "hospital",
+          "building": "yes",
+          "check_date": "2025-12-28",
+          "emergency": "yes",
+          "healthcare": "hospital",
+          "name": "Indira Gandhi Memorial Hospital",
+          "wikidata": "Q6024972",
+          "wikipedia": "en:Indira Gandhi Memorial Hospital"
+        },
+        "returned_version": 6,
+        "scope": "Limited current OSM feature/type/geometry comparison; does not verify services, opening hours, ownership, licence or August 2025 operation",
+        "source_url": "https://www.openstreetmap.org/way/151403710",
+        "status": "feature_type_and_nearby_geometry_consistent"
+      },
+      "supplied_verification_status": "VERIFIED"
+    },
+    {
+      "atoll_code": "Male City",
+      "csv_row": 37,
+      "island": "Male",
+      "island_geometry_check": {
+        "distance_from_island_footprint_m": 0.0,
+        "method": "OneMap footprint distance in EPSG:32643; zero means covered by polygon",
+        "onemap_fcode": "LD0442",
+        "onemap_island": "Malé"
+      },
+      "issues": [],
+      "name": "Dharumavantha Hospital",
+      "source_check": {
+        "expected_feature_type_supported_by_returned_tags": true,
+        "geometry_complete": true,
+        "issues": [],
+        "minimum_distance_to_osm_geometry_vertex_m": 22.2,
+        "osm_id": 1144346103,
+        "osm_type": "way",
+        "returned_geometry_bounds": [
+          73.5010115,
+          4.1726898,
+          73.501392,
+          4.172951
+        ],
+        "returned_last_edit_utc": "2026-01-10T04:31:49Z",
+        "returned_tags": {
+          "building": "hospital",
+          "building:levels": "25",
+          "name": "Dharumavantha Hospital",
+          "nohousenumber": "yes"
+        },
+        "returned_version": 3,
+        "scope": "Limited current OSM feature/type/geometry comparison; does not verify services, opening hours, ownership, licence or August 2025 operation",
+        "source_url": "https://www.openstreetmap.org/way/1144346103",
+        "status": "feature_type_and_nearby_geometry_consistent"
+      },
+      "supplied_verification_status": "VERIFIED"
+    },
+    {
+      "atoll_code": "Male City",
+      "csv_row": 38,
+      "island": "Male",
+      "island_geometry_check": {
+        "distance_from_island_footprint_m": 0.0,
+        "method": "OneMap footprint distance in EPSG:32643; zero means covered by polygon",
+        "onemap_fcode": "LD0442",
+        "onemap_island": "Malé"
+      },
+      "issues": [],
+      "name": "ADK Hospital",
+      "source_check": {
+        "expected_feature_type_supported_by_returned_tags": true,
+        "geometry_complete": true,
+        "issues": [],
+        "minimum_distance_to_osm_geometry_vertex_m": 19.7,
+        "osm_id": 1317929099,
+        "osm_type": "way",
+        "returned_geometry_bounds": [
+          73.5147629,
+          4.1746496,
+          73.5158048,
+          4.1752253
+        ],
+        "returned_last_edit_utc": "2026-08-09T09:37:42Z",
+        "returned_tags": {
+          "addr:city": "Male",
+          "addr:street": "Sosun Magu",
+          "amenity": "hospital",
+          "emergency": "yes",
+          "healthcare": "hospital",
+          "name": "ADK Hospital",
+          "wikidata": "Q4651138",
+          "wikipedia": "en:ADK Hospital"
+        },
+        "returned_version": 3,
+        "scope": "Limited current OSM feature/type/geometry comparison; does not verify services, opening hours, ownership, licence or August 2025 operation",
+        "source_url": "https://www.openstreetmap.org/way/1317929099",
+        "status": "feature_type_and_nearby_geometry_consistent"
+      },
+      "supplied_verification_status": "VERIFIED"
+    },
+    {
+      "atoll_code": "Male City",
+      "csv_row": 39,
+      "island": "Hulhumale",
+      "island_geometry_check": {
+        "distance_from_island_footprint_m": 0.0,
+        "method": "OneMap footprint distance in EPSG:32643; zero means covered by polygon",
+        "onemap_fcode": "LD0591",
+        "onemap_island": "Hulhumalé"
+      },
+      "issues": [],
+      "name": "Hulhumale' Hospital",
+      "source_check": {
+        "expected_feature_type_supported_by_returned_tags": false,
+        "geometry_complete": true,
+        "issues": [
+          "source_geometry_more_than_1000m_from_csv_point",
+          "returned_tags_do_not_support_claimed_feature_type"
+        ],
+        "minimum_distance_to_osm_geometry_vertex_m": 6278388.2,
+        "osm_id": 233767115,
+        "osm_type": "way",
+        "returned_geometry_bounds": [
+          23.7136248,
+          37.9537658,
+          23.713991,
+          37.9540585
+        ],
+        "returned_last_edit_utc": "2021-04-22T22:32:12Z",
+        "returned_tags": {
+          "addr:city": "Νέα Σμύρνη",
+          "addr:country": "GR",
+          "addr:housenumber": "147",
+          "addr:postcode": "17121",
+          "addr:street": "Ανδρέα Συγγρού",
+          "building": "yes"
+        },
+        "returned_version": 3,
+        "scope": "Limited current OSM feature/type/geometry comparison; does not verify services, opening hours, ownership, licence or August 2025 operation",
+        "source_url": "https://www.openstreetmap.org/way/233767115",
+        "status": "source_mismatch"
+      },
+      "supplied_verification_status": "CORRECTED"
+    },
+    {
+      "atoll_code": "Male City",
+      "csv_row": 40,
+      "island": "Hulhumale",
+      "island_geometry_check": {
+        "distance_from_island_footprint_m": 0.0,
+        "method": "OneMap footprint distance in EPSG:32643; zero means covered by polygon",
+        "onemap_fcode": "LD0591",
+        "onemap_island": "Hulhumalé"
+      },
+      "issues": [],
+      "name": "Tree Top Hospital",
+      "source_check": {
+        "expected_feature_type_supported_by_returned_tags": false,
+        "geometry_complete": true,
+        "issues": [
+          "returned_tags_do_not_support_claimed_feature_type",
+          "returned_feature_name_differs_from_claimed_name"
+        ],
+        "minimum_distance_to_osm_geometry_vertex_m": 4.4,
+        "osm_id": 2334944290,
+        "osm_type": "node",
+        "returned_geometry_bounds": [
+          73.5385131,
+          4.2139376,
+          73.5385131,
+          4.2139376
+        ],
+        "returned_last_edit_utc": "2023-10-24T20:09:35Z",
+        "returned_tags": {
+          "name": "ހުޅުމާލެ",
+          "name:cs": "Hulhumale",
+          "name:dv": "ހުޅުމާލެ",
+          "name:en": "Hulhumalé",
+          "name:fr": "Hulhumalé",
+          "name:ml": "ഹുലുമാലി",
+          "name:ru": "Хулхумале",
+          "place": "town",
+          "wikidata": "Q1636296",
+          "wikimedia_commons": "Category:Hulhumalé",
+          "wikipedia": "en:Hulhumalé"
+        },
+        "returned_version": 4,
+        "scope": "Limited current OSM feature/type/geometry comparison; does not verify services, opening hours, ownership, licence or August 2025 operation",
+        "source_url": "https://www.openstreetmap.org/node/2334944290",
+        "status": "source_mismatch"
+      },
+      "supplied_verification_status": "VERIFIED"
+    },
+    {
+      "atoll_code": "Male City",
+      "csv_row": 41,
+      "island": "Villimale",
+      "island_geometry_check": {
+        "distance_from_island_footprint_m": 0.0,
+        "method": "OneMap footprint distance in EPSG:32643; zero means covered by polygon",
+        "onemap_fcode": "LD0268",
+        "onemap_island": "Vilin'gili"
+      },
+      "issues": [],
+      "name": "Villimale' Hospital",
+      "source_check": {
+        "expected_feature_type_supported_by_returned_tags": false,
+        "geometry_complete": true,
+        "issues": [
+          "source_geometry_more_than_1000m_from_csv_point",
+          "returned_tags_do_not_support_claimed_feature_type"
+        ],
+        "minimum_distance_to_osm_geometry_vertex_m": 4363700.8,
+        "osm_id": 233767120,
+        "osm_type": "way",
+        "returned_geometry_bounds": [
+          76.8593576,
+          43.3039257,
+          76.8604543,
+          43.3045069
+        ],
+        "returned_last_edit_utc": "2013-08-16T18:33:56Z",
+        "returned_tags": {
+          "highway": "residential"
+        },
+        "returned_version": 1,
+        "scope": "Limited current OSM feature/type/geometry comparison; does not verify services, opening hours, ownership, licence or August 2025 operation",
+        "source_url": "https://www.openstreetmap.org/way/233767120",
+        "status": "source_mismatch"
+      },
+      "supplied_verification_status": "CORRECTED"
+    },
+    {
+      "atoll_code": "Male City",
+      "csv_row": 42,
+      "island": "Male",
+      "island_geometry_check": {
+        "distance_from_island_footprint_m": 0.0,
+        "method": "OneMap footprint distance in EPSG:32643; zero means covered by polygon",
+        "onemap_fcode": "LD0442",
+        "onemap_island": "Malé"
+      },
+      "issues": [],
+      "name": "Senahiya Military Hospital",
+      "source_check": {
+        "issues": [
+          "feature_not_returned_by_current_api"
+        ],
+        "osm_id": 3688177450,
+        "osm_type": "node",
+        "source_url": "https://www.openstreetmap.org/node/3688177450",
+        "status": "feature_not_returned"
+      },
+      "supplied_verification_status": "CORRECTED"
+    },
+    {
+      "atoll_code": "Male City",
+      "csv_row": 43,
+      "island": "Male",
+      "island_geometry_check": {
+        "distance_from_island_footprint_m": 0.0,
+        "method": "OneMap footprint distance in EPSG:32643; zero means covered by polygon",
+        "onemap_fcode": "LD0442",
+        "onemap_island": "Malé"
+      },
+      "issues": [
+        "island_proxy_is_not_a_facility_building_location",
+        "source_reuse_terms_not_stated_in_supplied_file"
+      ],
+      "name": "Dhamana Veshi (Urban Primary Health Care Centre)",
+      "source_check": {
+        "issues": [
+          "generic_source_url_does_not_verify_a_specific_feature"
+        ],
+        "scope": "No independent facility/service confirmation from this generic URL",
+        "source_url": "https://statisticsmaldives.gov.mv/yearbook/2025/",
+        "status": "no_direct_osm_feature"
+      },
+      "supplied_verification_status": "CORRECTED"
+    },
+    {
+      "atoll_code": "Male City",
+      "csv_row": 44,
+      "island": "Male",
+      "island_geometry_check": {
+        "distance_from_island_footprint_m": 0.0,
+        "method": "OneMap footprint distance in EPSG:32643; zero means covered by polygon",
+        "onemap_fcode": "LD0442",
+        "onemap_island": "Malé"
+      },
+      "issues": [
+        "island_proxy_is_not_a_facility_building_location",
+        "source_reuse_terms_not_stated_in_supplied_file"
+      ],
+      "name": "Advance Diagnostic Center (ADC)",
+      "source_check": {
+        "issues": [
+          "generic_source_url_does_not_verify_a_specific_feature"
+        ],
+        "scope": "No independent facility/service confirmation from this generic URL",
+        "source_url": "https://hems.health.gov.mv/establishments",
+        "status": "no_direct_osm_feature"
+      },
+      "supplied_verification_status": "UNVERIFIED"
+    },
+    {
+      "atoll_code": "Male City",
+      "csv_row": 45,
+      "island": "Male",
+      "island_geometry_check": {
+        "distance_from_island_footprint_m": 0.0,
+        "method": "OneMap footprint distance in EPSG:32643; zero means covered by polygon",
+        "onemap_fcode": "LD0442",
+        "onemap_island": "Malé"
+      },
+      "issues": [
+        "island_proxy_is_not_a_facility_building_location",
+        "source_reuse_terms_not_stated_in_supplied_file"
+      ],
+      "name": "AMDC Clinic",
+      "source_check": {
+        "issues": [
+          "generic_source_url_does_not_verify_a_specific_feature"
+        ],
+        "scope": "No independent facility/service confirmation from this generic URL",
+        "source_url": "https://hems.health.gov.mv/establishments",
+        "status": "no_direct_osm_feature"
+      },
+      "supplied_verification_status": "UNVERIFIED"
+    },
+    {
+      "atoll_code": "Male City",
+      "csv_row": 46,
+      "island": "Male",
+      "island_geometry_check": {
+        "distance_from_island_footprint_m": 0.0,
+        "method": "OneMap footprint distance in EPSG:32643; zero means covered by polygon",
+        "onemap_fcode": "LD0442",
+        "onemap_island": "Malé"
+      },
+      "issues": [
+        "island_proxy_is_not_a_facility_building_location",
+        "source_reuse_terms_not_stated_in_supplied_file"
+      ],
+      "name": "Medica Hospital / Medica Clinic",
+      "source_check": {
+        "issues": [
+          "generic_source_url_does_not_verify_a_specific_feature"
+        ],
+        "scope": "No independent facility/service confirmation from this generic URL",
+        "source_url": "https://hems.health.gov.mv/establishments",
+        "status": "no_direct_osm_feature"
+      },
+      "supplied_verification_status": "CORRECTED"
+    },
+    {
+      "atoll_code": "Male City",
+      "csv_row": 47,
+      "island": "Hulhumale",
+      "island_geometry_check": {
+        "distance_from_island_footprint_m": 0.0,
+        "method": "OneMap footprint distance in EPSG:32643; zero means covered by polygon",
+        "onemap_fcode": "LD0591",
+        "onemap_island": "Hulhumalé"
+      },
+      "issues": [
+        "island_proxy_is_not_a_facility_building_location",
+        "source_reuse_terms_not_stated_in_supplied_file"
+      ],
+      "name": "Atoll Clinic",
+      "source_check": {
+        "issues": [
+          "generic_source_url_does_not_verify_a_specific_feature"
+        ],
+        "scope": "No independent facility/service confirmation from this generic URL",
+        "source_url": "https://maaharaa.health.gov.mv/",
+        "status": "no_direct_osm_feature"
+      },
+      "supplied_verification_status": "UNVERIFIED"
+    },
+    {
+      "atoll_code": "Male City",
+      "csv_row": 48,
+      "island": "Hulhumale",
+      "island_geometry_check": {
+        "distance_from_island_footprint_m": 0.0,
+        "method": "OneMap footprint distance in EPSG:32643; zero means covered by polygon",
+        "onemap_fcode": "LD0591",
+        "onemap_island": "Hulhumalé"
+      },
+      "issues": [
+        "island_proxy_is_not_a_facility_building_location",
+        "source_reuse_terms_not_stated_in_supplied_file"
+      ],
+      "name": "Life Wellness Clinic",
+      "source_check": {
+        "issues": [
+          "generic_source_url_does_not_verify_a_specific_feature"
+        ],
+        "scope": "No independent facility/service confirmation from this generic URL",
+        "source_url": "https://maaharaa.health.gov.mv/",
+        "status": "no_direct_osm_feature"
+      },
+      "supplied_verification_status": "UNVERIFIED"
+    }
+  ],
+  "semantic_missing_counts": {
+    "atoll_code": 0,
+    "change_note": 0,
+    "coordinate_quality": 0,
+    "facility_name": 0,
+    "facility_name_dhivehi_if_known": 7,
+    "facility_type": 0,
+    "island": 0,
+    "latitude": 0,
+    "licence": 0,
+    "longitude": 0,
+    "notes": 0,
+    "opening_hours_if_listed": 47,
+    "original_value": 0,
+    "public_or_private": 0,
+    "retrieval_date": 0,
+    "services_listed": 0,
+    "source_name": 0,
+    "source_url": 0,
+    "verification_status": 0,
+    "verified_url": 0,
+    "what_was_checked": 0
+  },
+  "source_check_status_counts": {
+    "feature_not_returned": 1,
+    "feature_type_and_nearby_geometry_consistent": 3,
+    "no_direct_osm_feature": 8,
+    "source_mismatch": 35
+  }
+}

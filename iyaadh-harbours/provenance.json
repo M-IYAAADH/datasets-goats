@@ -1,0 +1,211 @@
+{
+  "dataset": "iyaadh-harbours",
+  "dataset_status": "review_copy_with_unresolved_source_issues",
+  "excluded_content": [
+    "FollowMe GPS observations and outputs",
+    "Unrelated datasets",
+    "Wind and wave files already on GitHub"
+  ],
+  "files": {
+    ".gitattributes": {
+      "bytes": 42,
+      "sha256": "00d269594ee34580484c5e1a2f7e5e20918611a110864adba2b1c126f3aa6c41"
+    },
+    "README.md": {
+      "bytes": 5338,
+      "sha256": "d626965da008567502e329bc42567b89e993f84b2c744a7d30320274a9183800"
+    },
+    "maritime_terminals_audited.csv": {
+      "bytes": 23046,
+      "row_count": 46,
+      "sha256": "194a4c662ab306170a898ba74eeb6249ab2686e143c06761fd19fdc10d2f6831"
+    },
+    "review_report.json": {
+      "bytes": 69450,
+      "sha256": "5c3425cb75893fb123a442e575a06cbd25b1dc2b3cf5a3f6f9105ce823418f5b"
+    },
+    "review_sources/elements.json": {
+      "bytes": 114337,
+      "sha256": "e56ba827da6dc5ba49eaf380383bcd2741d501018f9072c4464be7b2f0dc82c4"
+    },
+    "review_sources/node_batch_078797d04a9f5ea2.headers.txt": {
+      "bytes": 514,
+      "sha256": "3452f7cbd4fb0282e2af53af4dcc331ac3eda997f98f187f38272bc10045184f"
+    },
+    "review_sources/node_batch_078797d04a9f5ea2.json": {
+      "bytes": 17220,
+      "sha256": "130ded94bff8ee015df6b10412611d2c55008d0a6ab3877a528af6315186a2e0"
+    },
+    "review_sources/node_batch_177e2e3f776af3cc.headers.txt": {
+      "bytes": 514,
+      "sha256": "bbc0394455e811e4d82f34e62e40977b55e61652c363f66afb302276bddba031"
+    },
+    "review_sources/node_batch_177e2e3f776af3cc.json": {
+      "bytes": 926,
+      "sha256": "a8558cc40e5a9c21b1410f4afae7c878155d24014dbd9839111abfc9e7bf7c42"
+    },
+    "review_sources/node_batch_1eff967b7177cb83.headers.txt": {
+      "bytes": 514,
+      "sha256": "5038ecc34e9a224ba9d19f3072bcf0ae5a3bb1be0b4c500574a5b98129651e55"
+    },
+    "review_sources/node_batch_1eff967b7177cb83.json": {
+      "bytes": 600,
+      "sha256": "4dee0510aecfded57e45bf3912bc4c88e10bbf8067276a2770d3521ff607f89d"
+    },
+    "review_sources/node_batch_2b870a383f816223.headers.txt": {
+      "bytes": 514,
+      "sha256": "8933236a33917f8df72ed4d00c3d30519dcc54437a2f0f1865840e914b59023e"
+    },
+    "review_sources/node_batch_2b870a383f816223.json": {
+      "bytes": 16826,
+      "sha256": "213040321bc29d89a9353a4a4ffab47b5fef582b4b850a54094601ce35e5359c"
+    },
+    "review_sources/node_batch_33a298c67f75abdc.headers.txt": {
+      "bytes": 471,
+      "sha256": "1a64452e9dc963eaf9ac6a1ab5ced0738dda586b155e35e83d82d4b183868d16"
+    },
+    "review_sources/node_batch_33a298c67f75abdc.json": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "review_sources/node_batch_350c783a1b729767.headers.txt": {
+      "bytes": 514,
+      "sha256": "b8cb2f6d18e242bcb5a741fc0f26477a620207e49df3142b9852fcd07a43c957"
+    },
+    "review_sources/node_batch_350c783a1b729767.json": {
+      "bytes": 1267,
+      "sha256": "bcae69081fc72032c3572dacbd4fa70aca6f3d0ca81c5b57358dc2824bb19b56"
+    },
+    "review_sources/node_batch_37934204ac4def7b.headers.txt": {
+      "bytes": 471,
+      "sha256": "681ff3ee4d82ba70e1ddcdb00d4d7f296663c2b287433872464e8b2b32cbda38"
+    },
+    "review_sources/node_batch_37934204ac4def7b.json": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "review_sources/node_batch_4bcd3fe8ada3769b.headers.txt": {
+      "bytes": 471,
+      "sha256": "5a36b20aabbda7c9e3bd758ae1505d930d5e78f55ee0e1a41aa69b522695b64d"
+    },
+    "review_sources/node_batch_4bcd3fe8ada3769b.json": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "review_sources/node_batch_4f40ea4261f6c8e8.headers.txt": {
+      "bytes": 514,
+      "sha256": "53179fff1c03407f35120dcff8902874e29690b30ac07265adea1bb596979afa"
+    },
+    "review_sources/node_batch_4f40ea4261f6c8e8.json": {
+      "bytes": 4736,
+      "sha256": "be26d62b4b5c1c9e7b55dc5135cad5701bfd49beb81e518467978fb38cb8e36e"
+    },
+    "review_sources/node_batch_6af996377ee88aba.headers.txt": {
+      "bytes": 514,
+      "sha256": "ae3eb4b9773af016391e90133a9b86e147cd88308823589366fd0449c600136b"
+    },
+    "review_sources/node_batch_6af996377ee88aba.json": {
+      "bytes": 16940,
+      "sha256": "b62634d92aa711d9ad41714c58ad0ae4ee7848c8b9b3553eadc7053c0f8deb9d"
+    },
+    "review_sources/node_batch_b6415f3294552c18.headers.txt": {
+      "bytes": 471,
+      "sha256": "4823518eecc39603e2e7b489186a63ad541454aea358992712d4f04c031bc5e8"
+    },
+    "review_sources/node_batch_b6415f3294552c18.json": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "review_sources/node_batch_bdbed399e443601b.headers.txt": {
+      "bytes": 514,
+      "sha256": "62b635ccd5e7ac2b3b3c92f07e6fe9b823631cd74adeb3cd55fcdf46fbd8651d"
+    },
+    "review_sources/node_batch_bdbed399e443601b.json": {
+      "bytes": 926,
+      "sha256": "a432d373efeb38a7118a5fa7d0b08a16856c666b2c726b2d51ce3c5ef8a17ecc"
+    },
+    "review_sources/node_batch_ca71381fe9cee3b5.headers.txt": {
+      "bytes": 471,
+      "sha256": "c40ea682aee3effc3e1eec1e5a9ba23496b79eb58cc0dd0cf20eeec71f73c892"
+    },
+    "review_sources/node_batch_ca71381fe9cee3b5.json": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "review_sources/node_batch_e4bc93cc1b7f4c3b.headers.txt": {
+      "bytes": 471,
+      "sha256": "a0d3ee5d5ef78fb942039a39790bcfe21b74147b13acc6bbf60d56f1f6bd38d3"
+    },
+    "review_sources/node_batch_e4bc93cc1b7f4c3b.json": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "review_sources/node_batch_ed3e31301dee84e5.headers.txt": {
+      "bytes": 514,
+      "sha256": "e87e5307529cf4d0caa38982b442bbc50e249c10cd280c3ad5264e19a39bbbec"
+    },
+    "review_sources/node_batch_ed3e31301dee84e5.json": {
+      "bytes": 9256,
+      "sha256": "19feccdfdd7a276bb14f8a0934e36c671a11e3afec2854295cf6a0c8b1235cc7"
+    },
+    "review_sources/node_batch_ef0babd36b0112c9.headers.txt": {
+      "bytes": 471,
+      "sha256": "5051c8e4852336258f7bddcb39bf931cc6b65183c48111e300227504933b6e57"
+    },
+    "review_sources/node_batch_ef0babd36b0112c9.json": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "review_sources/node_batch_f78c1d4ac16aa68c.headers.txt": {
+      "bytes": 514,
+      "sha256": "2acb32c9b9f09880c33556d0389886f99250a692d2783792e4d5cddeb9df61ce"
+    },
+    "review_sources/node_batch_f78c1d4ac16aa68c.json": {
+      "bytes": 2406,
+      "sha256": "b8d1160b9645836a98bdbacdabfcc129cf073a1e4b6b1300d8219518928366b4"
+    },
+    "review_sources/osm_nodes.headers.txt": {
+      "bytes": 471,
+      "sha256": "3b28a9d46bb435b5d44c61537a6daef58d5fc329b4f5d9e10cccb00507033832"
+    },
+    "review_sources/osm_nodes.json": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "review_sources/osm_ways.headers.txt": {
+      "bytes": 514,
+      "sha256": "d750bfc5be667a4b61002f558eb2745e5d0d1a8f00f7211991f4e07af06f0dac"
+    },
+    "review_sources/osm_ways.json": {
+      "bytes": 14647,
+      "sha256": "3d3414ddb4822f2060fd967851c9cc6ff7ac9a4b06fb1d48a8da00046fb55a9f"
+    },
+    "review_sources/requests.json": {
+      "bytes": 30053,
+      "sha256": "a94b847d4733dc647eea049b9591e5284920985dfa68cf6344226466ae07ddab"
+    }
+  },
+  "input": {
+    "filename": "maritime_terminals_audited.csv",
+    "provided_by": "Repository user; original file retained unchanged",
+    "retrieval_dates_as_supplied": [
+      "2026-10-24"
+    ],
+    "row_count": 46,
+    "sha256": "194a4c662ab306170a898ba74eeb6249ab2686e143c06761fd19fdc10d2f6831"
+  },
+  "licences_as_supplied": {
+    "ODbL 1.0": 46
+  },
+  "manifest_note": "This manifest excludes its own hash.",
+  "original_verification_labels_are_supplier_assertions": true,
+  "raw_source_receipts": "review_sources/requests.json",
+  "review_date": "2026-10-24",
+  "review_method": "review_report.json",
+  "source_check_evidence_attribution": "© OpenStreetMap contributors, ODbL 1.0, https://www.openstreetmap.org/copyright",
+  "source_check_summary": {
+    "feature_deleted": 6,
+    "no_direct_osm_feature": 1,
+    "source_mismatch": 39
+  }
+}
