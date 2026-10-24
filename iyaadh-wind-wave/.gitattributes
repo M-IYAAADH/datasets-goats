@@ -1,0 +1,4 @@
+# Preserve cached API responses and hashed dataset files byte-for-byte.
+data/reference/weather/** -text
+data/reference/weather/raw/** -diff
+*.parquet -diff
